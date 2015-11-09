@@ -1,0 +1,675 @@
+@import url("//hello.myfonts.net/count/2f8b5c");
+@font-face {
+  font-family: 'SantEliaRough-BoldTwo';
+  src: url("webfonts/2F8B5C_16_0.eot");
+  src: url("webfonts/2F8B5C_16_0.eot?#iefix") format("embedded-opentype"), url("webfonts/2F8B5C_16_0.woff2") format("woff2"), url("webfonts/2F8B5C_16_0.woff") format("woff"), url("webfonts/2F8B5C_16_0.ttf") format("truetype"); }
+html {
+  overflow: -moz-scrollbars-vertical;
+  overflow-y: scroll; }
+
+body {
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility; }
+
+/* --INDEX-- */
+/* Preloader */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #9C4927;
+  z-index: 100; }
+
+#status {
+  width: 381px;
+  height: 136px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-image: url("../images/ArmadilloLoader.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: -68px 0 0 -190.5px; }
+
+.wrapper {
+  width: 100%;
+  background-color: #B3DFFA;
+  min-width: 352px;
+  max-width: 1600px;
+  position: relative;
+  margin: 0 auto; }
+
+#header-rule {
+  width: 100%;
+  height: 18px;
+  background-color: #6F1B08; }
+
+#logo-lockup {
+  position: absolute;
+  top: 48px;
+  left: 2.5%; }
+  #logo-lockup img {
+    width: 175px; }
+
+#nav-bar {
+  overflow: hidden;
+  width: 100%;
+  background-color: #4BB7F7;
+  padding: 18px 0 14px 0;
+  margin-top: 62px;
+  box-sizing: border-box; }
+  #nav-bar #address {
+    display: none; }
+  #nav-bar #address-mobile {
+    font-family: "Oswald", sans-serif;
+    font-size: 1.125em;
+    font-weight: 700;
+    line-height: 1.25em;
+    color: #FFF;
+    margin: 0 0 0 200px;
+    float: left;
+    text-align: left; }
+  #nav-bar ul {
+    width: 252px;
+    list-style-type: none;
+    margin: 57px auto 0 auto;
+    padding: 0;
+    display: block; }
+    #nav-bar ul li {
+      font-family: "Oswald", sans-serif;
+      font-size: 1.125em;
+      font-weight: 700;
+      float: left;
+      margin: 0; }
+      #nav-bar ul li a {
+        text-decoration: none;
+        color: #FFF;
+        line-height: 3.5em; }
+      #nav-bar ul li div {
+        height: 62px;
+        width: 63px; }
+    #nav-bar ul li:first-child {
+      background: url("../images/Icon-Menu_Mobile.png") center center no-repeat; }
+    #nav-bar ul li:nth-child(2) {
+      background: url("../images/Icon-History_Mobile.png") center center no-repeat; }
+    #nav-bar ul li:nth-child(3) {
+      background: url("../images/Icon-Press_Mobile.png") center center no-repeat; }
+    #nav-bar ul li:nth-child(4) {
+      background: url("../images/Icon-Taquiza_Mobile.png") center center no-repeat; }
+    #nav-bar ul span {
+      opacity: 0; }
+
+#image-container {
+  width: 100%;
+  /*height: 390px;*/
+  margin-top: 0;
+  display: block;
+  background-color: #F3E29D;
+  /*background-color: #a361fb;*/
+  box-sizing: border-box;
+  overflow: hidden; }
+
+.item img {
+  width: 100%; }
+  .item img p {
+    font-family: SantEliaRough-BoldTwo, script;
+    font-weight: 700;
+    font-size: 4em;
+    margin: 300px 0 0 200px; }
+
+#outer-rule-top {
+  width: 100%;
+  height: 110px;
+  background-color: #F3E29D;
+  box-sizing: border-box;
+  padding-top: 30px; }
+  #outer-rule-top #inner-rule-top {
+    width: 100%;
+    height: 62px;
+    background-color: #C9A885; }
+
+.hours-location {
+  width: 100%;
+  background-color: #C9A885;
+  padding: 18px 3% 18px 3%;
+  box-sizing: border-box;
+  float: left;
+  background-image: url("../images/Oak_Yellow.png");
+  background-repeat: no-repeat;
+  background-position: bottom -100px left -600px; }
+  .hours-location p {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 1.125em;
+    color: #6F1B08;
+    margin: 0;
+    display: inline-block;
+    vertical-align: top; }
+  .hours-location #phone {
+    font-size: 1.25em;
+    line-height: 1.325em;
+    margin-right: .75em; }
+  .hours-location #hours {
+    margin: 0 10px 10px 0; }
+  .hours-location .map {
+    width: 316px;
+    height: 184px;
+    margin: 0 auto 14px auto;
+    background: url("../images/TacoFlats_map.svg") center center no-repeat;
+    display: block; }
+  .hours-location #address {
+    margin-bottom: 10px; }
+  .hours-location #directions {
+    line-height: 1.25em; }
+
+#outer-rule-bottom {
+  width: 100%;
+  height: 18px;
+  background-color: #6F1B08;
+  clear: both; }
+
+#inner-rule-bottom {
+  width: 100%;
+  height: 62px;
+  background-color: #C9A885; }
+
+.taquiza-info {
+  width: 100%;
+  padding: 18px 3% 18px 3%;
+  background-color: #6F1B08;
+  box-sizing: border-box;
+  background-image: url("../images/Oak_Tan.png");
+  background-repeat: no-repeat;
+  background-position: bottom -100px right -600px; }
+
+#taquiza-header {
+  font-family: SantEliaRough-BoldTwo, script;
+  font-size: 5em;
+  color: #F3E29D;
+  margin: 0 0 0 -9px; }
+
+#taquiza-paragraph {
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  font-size: 1.25em;
+  line-height: 1.375em;
+  color: #F3E29D;
+  margin: 9px 0 32px 0; }
+
+#taquiza-collage {
+  width: 100%;
+  margin: 0 0 18px 0; }
+  #taquiza-collage img {
+    width: 340px; }
+
+footer {
+  width: 100%;
+  height: 180px;
+  padding-top: 26px;
+  box-sizing: border-box; }
+
+.social-media {
+  width: 244px;
+  margin: 0 auto;
+  padding: 0 0 0 36px; }
+  .social-media img {
+    margin-right: 24px; }
+
+#bottom-logo {
+  width: 202px;
+  margin: 10px auto 0 auto; }
+
+/* --MENU-- */
+.content-wrapper {
+  width: 100%;
+  margin-top: 62px;
+  display: block;
+  background-color: #6F1B08;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 24px 0 0 0; }
+
+#armadillo {
+  width: 580px;
+  margin: 0 auto; }
+
+#menu-buttons {
+  width: 460px;
+  margin: 20px auto; }
+  #menu-buttons button {
+    width: 150px;
+    margin: 0 auto;
+    padding: 6px 6px 5px 6px;
+    background-color: #C9A885;
+    font-family: "Oswald", sans-serif;
+    font-size: 1.125em;
+    font-weight: 700;
+    color: #6F1B08;
+    border: 0;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px; }
+
+#menus-wrapper {
+  width: 1063px;
+  margin: 0 auto;
+  box-sizing: border-box; }
+
+h2 {
+  font-family: SantEliaRough-BoldTwo, script;
+  font-size: 2.5em;
+  color: #F3E29D;
+  margin: 0 0 6px 0; }
+
+.beer-menu, .food-menu, .cocktail-menu {
+  margin-bottom: 30px; }
+
+.beer-menu {
+  display: block; }
+
+.food-menu {
+  display: none; }
+
+.cocktail-menu {
+  display: none; }
+
+hr {
+  background-color: none;
+  border: #4BB7F7 3px dotted;
+  border-style: none none dotted;
+  color: #FFF; }
+
+#menu-1, #menu-2, #menu-text, #menu-3, #menu-4, #menu-text-fd, #menu-5, #menu-6, #menu-text-ckt {
+  width: 348px;
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box; }
+
+#menu-1, #menu-2, #menu-3, #menu-4, #menu-5, #menu-6 {
+  background-color: #F3E29D;
+  border-radius: 7px;
+  padding: 1em; }
+  #menu-1 p, #menu-2 p, #menu-3 p, #menu-4 p, #menu-5 p, #menu-6 p {
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 1.25em;
+    line-height: 1.5em;
+    color: #000; }
+
+#menu-1 p, #menu-2 p {
+  margin: 0 0 1.5em 0; }
+
+#menu-1, #menu-3, #menu-5 {
+  margin-right: 10px; }
+
+#menu-text, #menu-text-fd, #menu-text-ckt {
+  color: #F3E29D;
+  padding-left: 1em; }
+  #menu-text p, #menu-text-fd p, #menu-text-ckt p {
+    margin: 0;
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 1.25em;
+    line-height: 1.25em; }
+
+h3 {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.25em;
+  font-weight: 700;
+  color: #6F1B08;
+  margin: 0 0 1em 0; }
+
+#menu-3 p {
+  margin: 0; }
+
+#menu-4 p, #menu-5 p, #menu-6 p {
+  margin: 0 0 .5em 0; }
+
+#menu-4 h3 {
+  margin: 0; }
+
+h4 {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.25em;
+  font-weight: 400;
+  color: #000;
+  margin: 0; }
+
+#secondary-rule-bottom {
+  width: 100%;
+  height: 30px;
+  background-color: #F3E29D; }
+
+/* --TAQUIZA-- */
+#taquiza-wrapper {
+  width: 1063px;
+  margin: 0 auto 30px auto;
+  padding-top: 62px;
+  box-sizing: border-box; }
+
+#taquiza-info {
+  width: 520px;
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 1em; }
+  #taquiza-info p {
+    margin: 0;
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 1.25em;
+    line-height: 1.25em;
+    color: #F3E29D; }
+
+#taquiza-form {
+  width: 520px;
+  display: inline-block; }
+
+#options-meats {
+  width: 124px;
+  display: inline-block;
+  float: left;
+  margin-right: 30px; }
+
+#options-apps {
+  display: inline-block; }
+
+#options-toppings {
+  width: 124px;
+  display: inline-block;
+  clear: left;
+  float: left;
+  margin: 16px 30px 0 0; }
+
+#options-tortilla {
+  margin-top: 16px; }
+
+#contact-info, #event-info, #options {
+  border: 1.5px solid #B3DFFA;
+  padding: 24px;
+  margin: 8px 0 8px 0;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.125em;
+  color: #F3E29D; }
+
+#contact-info p {
+  color: #FFF; }
+
+legend {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.25em;
+  font-weight: 400;
+  color: #F3E29D; }
+
+input[type="text"] {
+  margin: 6px 0 8px 0;
+  color: #6F1B08;
+  width: 50%;
+  border-style: none;
+  border-radius: 6px; }
+
+input[type="radio"] {
+  margin: 6px 6px 6px 0; }
+
+input[type="date"], input[type="time"], input[type="location"] {
+  margin: 6px 0 9px 0;
+  color: #6F1B08;
+  border-style: none;
+  border-radius: 6px; }
+
+.info-options {
+  margin-bottom: 8px; }
+
+#options p {
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  color: #FFF;
+  margin: 6px 0 -6px 0; }
+
+h5 {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.25em;
+  font-weight: 400;
+  color: #F3E29D;
+  margin: 12px 0 -12px 0; }
+
+textarea[name="addl-info"] {
+  width: 60%;
+  height: 120px;
+  overflow: auto;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.125em;
+  color: #6F1B08;
+  border-style: none;
+  border-radius: 6px; }
+
+input[type="submit"] {
+  width: 150px;
+  margin-top: 9px;
+  padding: 6px 6px 5px 6px;
+  background-color: #C9A885;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.125em;
+  font-weight: 700;
+  color: #6F1B08;
+  border: 0;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px; }
+
+/* --HISTORY-- */
+#history-wrapper {
+  width: 1063px;
+  margin: 0 auto;
+  box-sizing: border-box; }
+
+.photos {
+  float: left; }
+
+.text {
+  width: 348px;
+  float: right; }
+
+/* 493 BREAKPOINT */
+@media (min-width: 493px) {
+  .hours-location {
+    background-position: bottom -100px left -500px; }
+
+  .hours-location #address {
+    width: 442px;
+    text-align: left;
+    display: block;
+    margin: 0 auto 10px auto; }
+
+  .hours-location #directions {
+    width: 442px;
+    display: block;
+    margin: 0 auto; }
+
+  #taquiza-collage {
+    width: 77%;
+    margin: 0 auto 18px auto; }
+    #taquiza-collage img {
+      width: 400px; } }
+/* 632 BREAKPOINT */
+@media (min-width: 632px) {
+  #nav-bar {
+    padding: 0 3% 18px 344px;
+    margin-top: 30px; }
+    #nav-bar #address {
+      display: block;
+      font-family: "Oswald", sans-serif;
+      font-size: 1.375em;
+      font-weight: 700;
+      color: #FFF;
+      margin: 16px 4px 4px 9px;
+      float: left;
+      text-align: left; }
+    #nav-bar #address-mobile {
+      display: none; }
+    #nav-bar ul {
+      margin: 0;
+      float: left; }
+
+  #logo-lockup {
+    top: 61px; }
+    #logo-lockup img {
+      width: 319px; }
+
+  #image-container {
+    /*height: 672px;*/
+    clear: both; }
+
+  .hours-location .map {
+    width: 458px;
+    height: 267px;
+    float: right;
+    margin: 0 10% 14px 0; }
+
+  .hours-location #address {
+    float: right;
+    display: block;
+    margin: 0 11% 10px 0; }
+
+  .hours-location #directions {
+    float: right;
+    display: block;
+    margin: 0 11% 0 0; }
+
+  #taquiza-header {
+    margin: 0; }
+
+  #taquiza-collage {
+    width: 78%; }
+    #taquiza-collage img {
+      width: 460px; }
+
+  footer {
+    height: 103px;
+    padding-top: 16px;
+    box-sizing: border-box; }
+
+  .social-media {
+    margin: 10px 0 0 3%;
+    float: left;
+    padding: 0; }
+
+  #bottom-logo {
+    margin: 0 3% 0 0;
+    float: right; } }
+/* 881 BREAKPOINT */
+@media (min-width: 881px) {
+  #nav-bar {
+    padding: 0 18px 0px 344px; }
+    #nav-bar ul {
+      float: right; }
+      #nav-bar ul li {
+        text-align: center;
+        text-indent: 0;
+        white-space: normal; }
+        #nav-bar ul li div:hover a {
+          opacity: 0; }
+        #nav-bar ul li #menu:hover {
+          background: url("../images/Icon-Menu_initial.png") center center no-repeat; }
+        #nav-bar ul li #history:hover {
+          background: url("../images/Icon-History_initial.png") center center no-repeat; }
+        #nav-bar ul li #press:hover {
+          background: url("../images/Icon-Press_initial.png") center center no-repeat; }
+        #nav-bar ul li #taquiza:hover {
+          background: url("../images/Icon-Taquiza_initial.png") center center no-repeat; }
+      #nav-bar ul li:first-child {
+        background-image: none; }
+      #nav-bar ul li:nth-child(2) {
+        background-image: none; }
+      #nav-bar ul li:nth-child(3) {
+        background-image: none; }
+      #nav-bar ul li:nth-child(4) {
+        background-image: none; }
+      #nav-bar ul span {
+        opacity: 1; }
+
+  #image-container {
+    margin-top: 61px; }
+
+  .taquiza-info {
+    background-position: bottom -100px right -400px; }
+
+  #taquiza-collage {
+    width: 100%;
+    margin: 0 0 18px 62px; }
+    #taquiza-collage img {
+      width: 606px; } }
+/* 982 BREAKPOINT */
+@media (min-width: 982px) {
+  #nav-bar ul {
+    width: 300px; }
+    #nav-bar ul li {
+      font-size: 1.25em; }
+      #nav-bar ul li div {
+        width: 72px; }
+        #nav-bar ul li div a {
+          line-height: 3em; }
+
+  .hours-location {
+    background-position: bottom -100px left -320px; }
+
+  .hours-location #phone, #hours {
+    float: left; }
+
+  .hours-location #phone {
+    margin-right: .975em; }
+
+  .hours-location .map {
+    float: left;
+    margin: 0 0 14px 14px; }
+
+  .hours-location #address {
+    float: left;
+    margin: 0 11% 10px 384px; }
+
+  .hours-location #directions {
+    float: left;
+    margin: 0 0 0 384px; }
+
+  #location {
+    width: 850px;
+    margin: 0 auto;
+    overflow: hidden;
+    box-sizing: border-box; }
+
+  .hours-location .map {
+    float: left;
+    margin: 0 0 14px 0; } }
+/* 1024 BREAKPOINT */
+@media (min-width: 1024px) {
+  #nav-bar {
+    padding: 0 3% 0 367px; }
+    #nav-bar #address {
+      margin: 16px 4px 0 0; }
+
+  #logo-lockup {
+    left: 30px; }
+
+  .taquiza-info {
+    padding: 18px 3% 18px 3%; }
+
+  .hours-location {
+    padding: 18px 3% 18px 3%; } }
+/* 1551 BREAKPOINT */
+@media (min-width: 1551px) {
+  #location {
+    width: 1304px;
+    margin: 0 0 0 13%; }
+
+  .hours-location #address {
+    width: 300px;
+    margin: 0 11% 10px 16px; }
+
+  .hours-location #directions {
+    width: 300px;
+    margin: 0 0 0 16px; } }
+
+/*# sourceMappingURL=style.css.map */

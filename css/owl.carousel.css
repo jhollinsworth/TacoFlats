@@ -1,0 +1,154 @@
+@import url("//hello.myfonts.net/count/2f8b5c");
+@font-face {
+  font-family: 'SantEliaRough-BoldTwo';
+  src: url("webfonts/2F8B5C_16_0.eot");
+  src: url("webfonts/2F8B5C_16_0.eot?#iefix") format("embedded-opentype"), url("webfonts/2F8B5C_16_0.woff2") format("woff2"), url("webfonts/2F8B5C_16_0.woff") format("woff"), url("webfonts/2F8B5C_16_0.ttf") format("truetype"); }
+
+  /* 
+ * 	Core Owl Carousel CSS File
+ *	v1.3.3
+ */
+
+/* clearfix */
+.owl-carousel .owl-wrapper:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+/* display none until init */
+.owl-carousel{
+	display: none;
+	position: relative;
+	width: 100%;
+	-ms-touch-action: pan-y;
+}
+.owl-carousel .owl-wrapper{
+	display: none;
+	position: relative;
+	-webkit-transform: translate3d(0px, 0px, 0px);
+}
+.owl-carousel .owl-wrapper-outer{
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+.owl-carousel .owl-wrapper-outer.autoHeight{
+	-webkit-transition: height 500ms ease-in-out;
+	-moz-transition: height 500ms ease-in-out;
+	-ms-transition: height 500ms ease-in-out;
+	-o-transition: height 500ms ease-in-out;
+	transition: height 500ms ease-in-out;
+}
+	
+.owl-carousel .owl-item{
+	float: left;
+}
+.owl-carousel .owl-item p {
+	position: absolute;
+	top: 0;
+	left: 5%;
+	font-family: SantEliaRough-BoldTwo, script;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 28px;
+	color: #FFF;
+	padding-right: 3%;
+	text-shadow: 2px 2px 8px #000;
+}
+.owl-carousel .owl-item p span {
+	font-family: "Oswald", sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	text-align: right;
+}
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div{
+	cursor: pointer;
+}
+.owl-controls {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* mouse grab icon */
+.grabbing { 
+    cursor:url(grabbing.png) 8 8, move;
+}
+
+/* fix */
+.owl-carousel  .owl-wrapper,
+.owl-carousel  .owl-item{
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility:    hidden;
+	-ms-backface-visibility:     hidden;
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+}
+
+/* 493 BREAKPOINT */
+@media (min-width: 493px) {
+	.owl-carousel .owl-item p {
+		top: 1%;
+		left: 10%;
+		font-size: 40px;
+		line-height: 44px;
+	}
+	.owl-carousel .owl-item p span {
+		font-size: 20px;
+	}
+}
+
+/* 632 BREAKPOINT */
+@media (min-width: 632px) {
+	.owl-carousel .owl-item p {
+		top: 12%;
+		padding-right: 5%;
+	}
+}
+
+/* 881 BREAKPOINT */
+@media (min-width: 881px) {
+	.owl-carousel .owl-item p {
+		font-size: 48px;
+		line-height: 50px;
+	}
+	.owl-carousel. .owl-item p span {
+		font-size: 24px;
+	}
+}
+
+/* 982 BREAKPOINT */
+@media (min-width: 982px) {
+	.owl-carousel .owl-item p {
+		top: 5%;
+		left: 20%;
+		font-size: 66px;
+		line-height: 69px;
+		padding-right: 8%;
+	}
+	.owl-carousel .owl-item p span {
+		font-size: 30px;
+	}
+}
+
+/* 1024 BREAKPOINT */
+@media (min-width: 1024px) {
+	.owl-carousel .owl-item p {
+		top: 8%;
+		left: 20%;
+		font-size: 72px;
+		line-height: 75px;
+		padding-right: 10%;
+	}
+	.owl-carousel .owl-item p span {
+		font-size: 34px;
+	}
+}
