@@ -1,0 +1,28 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3121861, 2015-11-09T03:57:07-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: SantEliaRough-BoldTwo by Yellow Design Studio
+ * URL: http://www.myfonts.com/fonts/yellow-design/sant-elia-script/rough-bold-two/
+ * Copyright: Copyright (c) 2015 by Yellow Design Studio. All rights reserved.
+ * Licensed pageviews: 500,000
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3121861
+ * 
+ * © 2015 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/2fa2c5");
+
+  
+@font-face {font-family: 'SantEliaRough-BoldTwo';src: url('webfonts/2FA2C5_0_0.eot');src: url('webfonts/2FA2C5_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2FA2C5_0_0.woff2') format('woff2'),url('webfonts/2FA2C5_0_0.woff') format('woff'),url('webfonts/2FA2C5_0_0.ttf') format('truetype');}
+ 
