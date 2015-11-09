@@ -1,5 +1,8 @@
-@import url("//hello.myfonts.net/count/2f8b5c");
-@font-face {font-family: 'SantEliaRough-BoldTwo';src: url('webfonts/2F8B5C_16_0.eot');src: url('webfonts/2F8B5C_16_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2F8B5C_16_0.woff2') format('woff2'),url('webfonts/2F8B5C_16_0.woff') format('woff'),url('webfonts/2F8B5C_16_0.ttf') format('truetype');}
+@import url("//hello.myfonts.net/count/2fa3ee");
+
+  
+@font-face {font-family: 'SantEliaRough-BoldTwo';src: url('webfonts/2FA3EE_0_0.eot');src: url('webfonts/2FA3EE_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2FA3EE_0_0.woff2') format('woff2'),url('webfonts/2FA3EE_0_0.woff') format('woff'),url('webfonts/2FA3EE_0_0.ttf') format('truetype');}
+ 
 @import "partials";
 
 html {
@@ -223,6 +226,8 @@ body {
 
 #taquiza-header {
 	font-family: $display-font;
+	font-weight: normal;
+	font-style: normal;
 	font-size: 5em;
 	color: $secondary-yellow;
 	margin: 0 0 0 -9px;
@@ -312,6 +317,8 @@ footer {
 
 h2 {
 	font-family: $display-font;
+	font-weight: normal;
+	font-style: normal;
 	font-size: 2.5em;
 	color: $secondary-yellow;
 	margin: 0 0 6px 0;

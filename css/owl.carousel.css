@@ -1,9 +1,8 @@
-@import url("//hello.myfonts.net/count/2f8b5c");
-@font-face {
-  font-family: 'SantEliaRough-BoldTwo';
-  src: url("webfonts/2F8B5C_16_0.eot");
-  src: url("webfonts/2F8B5C_16_0.eot?#iefix") format("embedded-opentype"), url("webfonts/2F8B5C_16_0.woff2") format("woff2"), url("webfonts/2F8B5C_16_0.woff") format("woff"), url("webfonts/2F8B5C_16_0.ttf") format("truetype"); }
+@import url("//hello.myfonts.net/count/2fa3ee");
 
+  
+@font-face {font-family: 'SantEliaRough-BoldTwo';src: url('webfonts/2FA3EE_0_0.eot');src: url('webfonts/2FA3EE_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2FA3EE_0_0.woff2') format('woff2'),url('webfonts/2FA3EE_0_0.woff') format('woff'),url('webfonts/2FA3EE_0_0.ttf') format('truetype');}
+ 
   /* 
  * 	Core Owl Carousel CSS File
  *	v1.3.3
@@ -51,7 +50,6 @@
 	top: 0;
 	left: 5%;
 	font-family: SantEliaRough-BoldTwo, script;
-	font-weight: 700;
 	font-size: 26px;
 	line-height: 28px;
 	color: #FFF;
@@ -78,9 +76,9 @@
 }
 
 /* mouse grab icon */
-.grabbing { 
+/*.grabbing { 
     cursor:url(grabbing.png) 8 8, move;
-}
+}*/
 
 /* fix */
 .owl-carousel  .owl-wrapper,
