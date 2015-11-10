@@ -1,13 +1,8 @@
 @import url("//hello.myfonts.net/count/2fa3ee");
-@import url("//hello.myfonts.net/count/2fa2c5");
 @font-face {
   font-family: 'SantEliaRough-BoldTwo';
   src: url("webfonts/2FA3EE_0_0.eot");
   src: url("webfonts/2FA3EE_0_0.eot?#iefix") format("embedded-opentype"), url("webfonts/2FA3EE_0_0.woff2") format("woff2"), url("webfonts/2FA3EE_0_0.woff") format("woff"), url("webfonts/2FA3EE_0_0.ttf") format("truetype"); }
-@font-face {
-  font-family: 'SantEliaRough-BoldTwo';
-  src: url("webfonts/2FA2C5_0_0.eot");
-  src: url("webfonts/2FA2C5_0_0.eot?#iefix") format("embedded-opentype"), url("webfonts/2FA2C5_0_0.woff2") format("woff2"), url("webfonts/2FA2C5_0_0.woff") format("woff"), url("webfonts/2FA2C5_0_0.ttf") format("truetype"); }
 html {
   overflow: -moz-scrollbars-vertical;
   overflow-y: scroll; }
@@ -15,7 +10,8 @@ html {
 body {
   overflow: hidden;
   -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility; }
+  text-rendering: optimizeLegibility;
+  background-color: #B3DFFA; }
 
 /* --INDEX-- */
 /* Preloader */
@@ -55,7 +51,8 @@ body {
 #logo-lockup {
   position: absolute;
   top: 48px;
-  left: 2.5%; }
+  left: 2.5%;
+  z-index: 2; }
   #logo-lockup img {
     width: 175px; }
 
@@ -109,11 +106,9 @@ body {
 
 #image-container {
   width: 100%;
-  /*height: 390px;*/
   margin-top: 0;
   display: block;
   background-color: #F3E29D;
-  /*background-color: #a361fb;*/
   box-sizing: border-box;
   overflow: hidden; }
 
@@ -198,13 +193,36 @@ body {
   color: #F3E29D;
   margin: 0 0 0 -9px; }
 
+#taquiza-story {
+  margin: 9px 0 32px 0; }
+
 #taquiza-paragraph {
   font-family: "Oswald", sans-serif;
   font-weight: 300;
   font-size: 1.25em;
   line-height: 1.375em;
-  color: #F3E29D;
-  margin: 9px 0 32px 0; }
+  color: #F3E29D; }
+
+#book {
+  float: right;
+  width: 150px;
+  margin: 0;
+  padding: 6px 6px 5px 6px;
+  background-color: #C9A885;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.125em;
+  font-weight: 700;
+  color: #6F1B08;
+  border: 0;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px; }
+  #book a {
+    text-decoration: none;
+    color: #6F1B08; }
+  #book a:hover {
+    color: #FFF;
+    background-color: #4BB7F7; }
 
 #taquiza-collage {
   width: 100%;
@@ -232,7 +250,7 @@ footer {
 /* --MENU-- */
 .content-wrapper {
   width: 100%;
-  margin-top: 62px;
+  margin-top: 0;
   display: block;
   background-color: #6F1B08;
   box-sizing: border-box;
@@ -240,15 +258,26 @@ footer {
   padding: 24px 0 0 0; }
 
 #armadillo {
-  width: 580px;
-  margin: 0 auto; }
-
+  width: 600px;
+  margin: 30px 0 0 -60px;
+  position: relative; }
+  #armadillo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: walk 5.7s linear forwards;
+    z-index: 1; }
+@keyframes walk {
+  from {
+    left: 0; }
+  to {
+    left: 90px; } }
 #menu-buttons {
-  width: 460px;
-  margin: 20px auto; }
+  width: 150px;
+  margin: 128px auto 12px auto; }
   #menu-buttons button {
     width: 150px;
-    margin: 0 auto;
+    margin: 6px auto 6px auto;
     padding: 6px 6px 5px 6px;
     background-color: #C9A885;
     font-family: "Oswald", sans-serif;
@@ -261,7 +290,7 @@ footer {
     border-radius: 7px; }
 
 #menus-wrapper {
-  width: 1063px;
+  width: 352px;
   margin: 0 auto;
   box-sizing: border-box; }
 
@@ -312,11 +341,11 @@ hr {
   margin: 0 0 1.5em 0; }
 
 #menu-1, #menu-3, #menu-5 {
-  margin-right: 10px; }
+  margin: 0 0 20px 0; }
 
 #menu-text, #menu-text-fd, #menu-text-ckt {
   color: #F3E29D;
-  padding-left: 1em; }
+  padding: 1em .5em 0 1em; }
   #menu-text p, #menu-text-fd p, #menu-text-ckt p {
     margin: 0;
     font-family: "Oswald", sans-serif;
@@ -354,16 +383,17 @@ h4 {
 
 /* --TAQUIZA-- */
 #taquiza-wrapper {
-  width: 1063px;
+  width: 352px;
   margin: 0 auto 30px auto;
   padding-top: 62px;
   box-sizing: border-box; }
 
 #taquiza-info {
-  width: 520px;
+  width: 348px;
   display: inline-block;
   vertical-align: top;
-  padding-right: 1em; }
+  padding-right: 1em;
+  margin-bottom: 18px; }
   #taquiza-info p {
     margin: 0;
     font-family: "Oswald", sans-serif;
@@ -373,7 +403,7 @@ h4 {
     color: #F3E29D; }
 
 #taquiza-form {
-  width: 520px;
+  width: 348px;
   display: inline-block; }
 
 #options-meats {
@@ -455,7 +485,7 @@ textarea[name="addl-info"] {
   border-style: none;
   border-radius: 6px; }
 
-input[type="submit"] {
+#submit {
   width: 150px;
   margin-top: 9px;
   padding: 6px 6px 5px 6px;
@@ -463,25 +493,118 @@ input[type="submit"] {
   font-family: "Oswald", sans-serif;
   font-size: 1.125em;
   font-weight: 700;
-  color: #6F1B08;
   border: 0;
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
   border-radius: 7px; }
+  #submit a {
+    text-decoration: none;
+    color: #6F1B08; }
 
 /* --HISTORY-- */
-#history-wrapper {
-  width: 1063px;
+#history-text p, #history-1 p, #history-2 p {
+  margin: 24px 18px 30px 18px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  font-size: 1.125em;
+  line-height: 1.25em;
+  color: #F3E29D; }
+
+#history-1 img:first-child {
+  margin-left: -24px;
+  margin-bottom: 10px; }
+
+#history-1 img:nth-child(2) {
+  margin-left: 60px; }
+
+#history-2 img:first-child {
+  margin-bottom: 10px; }
+
+/* --PRESS-- */
+#press-wrapper {
+  padding: 0 5% 30px 5%; }
+
+.reviews {
+  width: 100%;
   margin: 0 auto;
-  box-sizing: border-box; }
+  background-color: #F3E29D;
+  border-radius: 7px;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 1em; }
 
-.photos {
-  float: left; }
+#excerpt {
+  margin: -16px 0  0;
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  font-size: 1.25em;
+  line-height: 1.25em;
+  color: #000; }
 
-.text {
-  width: 348px;
-  float: right; }
+#direct {
+  margin: 0 0 16px 0;
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 1.25em;
+  line-height: 2em; }
+  #direct a {
+    color: #6F1B08; }
 
+/* --CONFIRMATION-- */
+.gracias-wrapper {
+  width: 528px;
+  top: 280px;
+  margin: 0 auto;
+  position: relative; }
+
+#top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: auto;
+  z-index: 2;
+  animation: appear 1s; }
+
+@keyframes appear {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+#bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: auto;
+  z-index: 1; }
+
+#return-button {
+  position: absolute;
+  top: 230px;
+  left: 200px;
+  z-index: 3;
+  width: 150px;
+  margin: 6px auto 6px auto;
+  padding: 6px 6px 5px 6px;
+  background-color: #5cb4e5;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.125em;
+  text-align: center;
+  font-weight: 700;
+  border: 0;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  animation: fadein 3s; }
+  #return-button a {
+    text-decoration: none;
+    color: #B3DFFA; }
+
+@keyframes fadein {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 /* 493 BREAKPOINT */
 @media (min-width: 493px) {
   .hours-location {
@@ -502,7 +625,27 @@ input[type="submit"] {
     width: 77%;
     margin: 0 auto 18px auto; }
     #taquiza-collage img {
-      width: 400px; } }
+      width: 400px; }
+
+  #history-wrapper {
+    width: 90%;
+    margin: 0 auto; }
+
+  #history-1, #history-2, #history-3 {
+    width: 90%;
+    margin: 0 auto; }
+
+  #history-1 img:first-child {
+    margin-top: 2px;
+    margin-left: -10px;
+    margin-bottom: -30px; }
+
+  #history-1 img:nth-child(2) {
+    margin-left: 170px;
+    margin-top: -40px; }
+
+  #history-2 img:first-child {
+    margin-left: 80px; } }
 /* 632 BREAKPOINT */
 @media (min-width: 632px) {
   #nav-bar {
@@ -568,7 +711,63 @@ input[type="submit"] {
 
   #bottom-logo {
     margin: 0 3% 0 0;
-    float: right; } }
+    float: right; }
+
+  #armadillo {
+    width: 600px;
+    margin: 30px auto 0 auto; }
+
+  #taquiza-wrapper {
+    width: 520px; }
+
+  #taquiza-info {
+    width: 520px; }
+
+  #taquiza-form {
+    width: 520px; }
+
+  #history-1 img:first-child {
+    margin-left: 63px;
+    margin-bottom: -120px;
+    margin-top: 30px; }
+
+  #history-1 img:nth-child(2) {
+    margin-top: -40px;
+    margin-left: 240px; }
+
+  #history-2 img:first-child {
+    margin-left: -40px; }
+
+  #history-2 img:nth-child(2) {
+    margin-left: 10px; } }
+/* 760 BREAKPOINT */
+@media (min-width: 760px) {
+  .content-wrapper {
+    padding: 38px 18px 0 18px; }
+
+  #taquiza-wrapper {
+    margin: -14px auto 30px auto; }
+
+  #menu-buttons {
+    width: 460px; }
+    #menu-buttons button {
+      width: 150px;
+      margin: 0 auto; }
+
+  #menus-wrapper {
+    width: 756px; }
+
+  #menu-1, #menu-3, #menu-5 {
+    margin: 0 10px 0 0; }
+
+  #menu-text, #menu-text-fd, #menu-text-ckt {
+    width: 711px;
+    padding: 1em 1em 0 1em; }
+
+  #press-wrapper {
+    padding: 60px 5% 30px 5%;
+    width: 638.125px;
+    margin: 0 auto; } }
 /* 881 BREAKPOINT */
 @media (min-width: 881px) {
   #nav-bar {
@@ -600,6 +799,9 @@ input[type="submit"] {
       #nav-bar ul span {
         opacity: 1; }
 
+  .content-wrapper {
+    margin-top: 61px; }
+
   #image-container {
     margin-top: 61px; }
 
@@ -610,7 +812,16 @@ input[type="submit"] {
     width: 100%;
     margin: 0 0 18px 62px; }
     #taquiza-collage img {
-      width: 606px; } }
+      width: 606px; }
+
+  #history-2 img:first-child {
+    margin-left: 0; }
+
+  #history-2 img:nth-child(2) {
+    margin-left: 10px; }
+
+  #history-3 img {
+    margin-left: 80px; } }
 /* 982 BREAKPOINT */
 @media (min-width: 982px) {
   #nav-bar ul {
@@ -651,7 +862,14 @@ input[type="submit"] {
 
   .hours-location .map {
     float: left;
-    margin: 0 0 14px 0; } }
+    margin: 0 0 14px 0; }
+
+  #taquiza-paragraph {
+    width: 908px;
+    margin: 0 auto 32px auto; }
+
+  #book {
+    margin: 0 10% 0 0; } }
 /* 1024 BREAKPOINT */
 @media (min-width: 1024px) {
   #nav-bar {
@@ -666,7 +884,70 @@ input[type="submit"] {
     padding: 18px 3% 18px 3%; }
 
   .hours-location {
-    padding: 18px 3% 18px 3%; } }
+    padding: 18px 3% 18px 3%; }
+
+  #history-2 img:nth-child(2) {
+    margin-bottom: 10px; } }
+/* 1046 BREAKPOINT */
+@media (min-width: 1046px) {
+  #history-1 img:first-child {
+    margin-left: 120px;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-right: 10px; }
+
+  #history-1 img:nth-child(2) {
+    margin-top: 0;
+    margin-left: 0; } }
+/* 1120 BREAKPOINT */
+@media (min-width: 1120px) {
+  .content-wrapper {
+    padding: 24px 0 0 0; }
+
+  #menus-wrapper {
+    width: 1063px; }
+
+  #menu-text, #menu-text-fd, #menu-text-ckt {
+    width: 348px;
+    padding: 0 0 0 1em; }
+
+  #taquiza-wrapper {
+    width: 1063px;
+    margin: 0 auto 30px auto; }
+
+  #taquiza-info {
+    width: 520px;
+    margin-top: 0; }
+
+  #taquiza-form {
+    width: 520px; }
+
+  #history-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box; }
+
+  #history-1, #history-2, #history-3 {
+    width: 1120px;
+    margin: 0 auto; }
+
+  .photos {
+    float: left;
+    margin-right: 18px; }
+
+  #history-text p, #history-1 p, #history-2 p {
+    margin-left: 18px;
+    margin-right: 60px; }
+
+  #history-2 img:first-child {
+    margin-left: 40px;
+    margin-top: 10px; }
+
+  #history-2 img:nth-child(2) {
+    margin-left: 10px; }
+
+  #history-3 img {
+    margin-bottom: 30px; } }
 /* 1551 BREAKPOINT */
 @media (min-width: 1551px) {
   #location {
