@@ -48,10 +48,10 @@
 .owl-carousel .owl-item p {
 	position: absolute;
 	top: 0;
-	left: 5%;
+	left: 4%;
 	font-family: SantEliaRough-BoldTwo, script;
-	font-size: 32px;
-	line-height: 33px;
+	font-size: 31px;
+	line-height: 32px;
 	color: #FFF;
 	padding-right: 3%;
 	text-shadow: 3px 3px 9px #000;
@@ -94,10 +94,10 @@
 /* 493 BREAKPOINT */
 @media (min-width: 493px) {
 	.owl-carousel .owl-item p {
-		top: 1%;
-		left: 10%;
+		top: 0;
+		left: 7%;
 		font-size: 40px;
-		line-height: 44px;
+		line-height: 41px;
 	}
 	.owl-carousel .owl-item p span {
 		font-size: 20px;
@@ -107,29 +107,31 @@
 /* 632 BREAKPOINT */
 @media (min-width: 632px) {
 	.owl-carousel .owl-item p {
-		top: 12%;
+		top: 15%;
 		padding-right: 5%;
+		font-size: 42px;
+		line-height: 43px;
 	}
 }
 
 /* 881 BREAKPOINT */
 @media (min-width: 881px) {
 	.owl-carousel .owl-item p {
-		font-size: 48px;
-		line-height: 50px;
+		font-size: 58px;
+		line-height: 59px;
 	}
-	.owl-carousel. .owl-item p span {
-		font-size: 24px;
+	.owl-carousel .owl-item p span {
+		font-size: 21px;
 	}
 }
 
 /* 982 BREAKPOINT */
 @media (min-width: 982px) {
 	.owl-carousel .owl-item p {
-		top: 5%;
+		top: 7%;
 		left: 20%;
 		font-size: 66px;
-		line-height: 69px;
+		line-height: 68px;
 		padding-right: 8%;
 	}
 	.owl-carousel .owl-item p span {
@@ -137,16 +139,30 @@
 	}
 }
 
-/* 1024 BREAKPOINT */
-@media (min-width: 1024px) {
+/* 1120 BREAKPOINT */
+@media (min-width: 1120px) {
 	.owl-carousel .owl-item p {
 		top: 8%;
 		left: 20%;
-		font-size: 72px;
-		line-height: 75px;
+		font-size: 70px;
+		line-height: 72px;
 		padding-right: 10%;
 	}
 	.owl-carousel .owl-item p span {
 		font-size: 34px;
+	}
+}
+
+/* 1551 BREAKPOINT */
+@media (min-width: 1551px) {
+	.owl-carousel .owl-item p {
+		top: 10%;
+		left: 22%;
+		font-size: 80px;
+		line-height: 82px;
+		padding-right: 11%;
+	}
+	.owl-carousel .owl-item p span {
+		font-size: 38px;
 	}
 }
