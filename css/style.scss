@@ -465,16 +465,16 @@ h4 {
 	margin-top: 16px;
 }
 #contact-info, #event-info, #options {
-	border: 1.5px solid $secondary-blue;
+	border: 2px solid $secondary-blue;
 	padding: 24px;
 	margin: 8px 0 8px 0;
 	font-family: $text-font;
 	font-size: 1.125em;
 	color: $secondary-yellow;
-}
+}/*
 #contact-info p {
-	color: #FFF;
-}
+	color: yellow;
+}*/
 legend {
 	font-family: $text-font;
 	font-size: 1.25em;
@@ -483,22 +483,28 @@ legend {
 }
 input[type="text"] {
 	margin: 6px 0 8px 0;
-	color: $primary-red;
+	color: $secondary-yellow;
 	width: 50%;
-	border-style: none;
-	border-radius: 6px;
+	border: 1px solid $secondary-yellow;
+	background-color: $primary-red;
 }
 input[type="radio"] {
 	margin: 6px 6px 6px 0;
 }
 input[type="date"], input[type="time"], input[type="location"] {
 	margin: 6px 0 9px 0;
-	color: $primary-red;
-	border-style: none;
-	border-radius: 6px;
+	color: $secondary-yellow;
+	border: 1px solid $secondary-yellow;
+	background-color: $primary-red;
 }
 .info-options {
 	margin-bottom: 8px;
+	width: 170px;
+	background-color: $primary-red;
+	border: 1px solid $secondary-yellow;
+}
+#people {
+		margin-top: 6px;
 }
 #options p {
 	font-family: $text-font;
@@ -520,9 +526,9 @@ textarea[name="addl-info"] {
 	overflow: auto;
 	font-family: $text-font;
 	font-size: 1.125em;
-	color: $primary-red;
-	border-style: none;
-	border-radius: 6px;
+	color: $secondary-yellow;
+	border: 1px solid $secondary-yellow;
+	background-color: $primary-red;
 }
 #submit {
 	width: 150px;

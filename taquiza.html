@@ -80,9 +80,9 @@
 							<input type="text" name="email" value="">
 							<br>
 							How would you like to be contacted?<br>
-							<input type="radio" name="contact" value="email" checked>E-mail
+							<input type="radio" id="c1" name="contact" value="email" checked><label for="c1">E-mail</label>
 							<br>
-							<input type="radio" name="contact" value="phone">Phone
+							<input type="radio" id="c2" name="contact" value="phone"><label for="c2">Phone</label>
 						</fieldset>
 						<fieldset id="event-info">
 							<legend>Event Information</legend>
@@ -101,7 +101,7 @@
 							Location of Event<br>
 							<input type="location" /><br>
 							Number of People<br>
-							<select class="info-options">
+							<select class="info-options" id="people">
 								<option value="select">--Select--</option>
 								<option value="less-40">Less Than 40</option>
 								<option value="40-75">40-75</option>
@@ -113,30 +113,30 @@
 							<legend>Taquiza Options</legend>
 							<div id="options-meats">
 								Meats<br>
-									<p>Al Pastor</p><input type="checkbox" name="al-pastor" value="al-pastor">
-									<p>Grilled Chicken</p><input type="checkbox" name="chicken" value="chicken">
-									<p>Carne Asada</p><input type="checkbox" name="carne-asada" value="carne-asada">
-									<p>Grilled Vegetables</p><input type="checkbox" name="vegetable" value="vegetable"></p>
+									<p><label for="c3">Al Pastor</label></p><input type="checkbox" id="c3" name="al-pastor" value="al-pastor">
+									<p><label for="c4">Grilled Chicken</label></p><input type="checkbox" id="c4" name="chicken" value="chicken">
+									<p><label for="c5">Carne Asada</label></p><input type="checkbox" id="c5" name="carne-asada" value="carne-asada">
+									<p><label for="c6">Grilled Vegetables</label></p><input type="checkbox" id="c6" name="vegetable" value="vegetable"></p>
 							</div>
 							<div id="options-apps">
 								Appetizers<br>
-									<p>Chips</p><input type="checkbox" name="chips" value="chips">
-									<p>Guacamole</p><input type="checkbox" name="guacamole" value="guacamole">
-									<p>Queso</p><input type="checkbox" name="queso" value="queso">
-									<p>Pico de Gallo</p><input type="checkbox" name="pico-de-gallo" value="pico-de-gallo"></p>
+									<p><label for="c7">Chips</label></p><input type="checkbox" id="c7" name="chips" value="chips">
+									<p><label for="c8">Guacamole</label></p><input type="checkbox" id="c8" name="guacamole" value="guacamole">
+									<p><label for="c9">Queso</label></p><input type="checkbox" id="c9" name="queso" value="queso">
+									<p><label for="c10">Pico de Gallo</label></p><input type="checkbox" id="c10" name="pico-de-gallo" value="pico-de-gallo"></p>
 							</div>
 							<div id="options-toppings">
 								Toppings<br>
-									<p>Jack Cheese</p><input type="checkbox" name="jack-cheese" value="jack-cheese">
-									<p>Lettuce</p><input type="checkbox" name="lettuce" value="lettuce">
-									<p>Black Refried Beans</p><input type="checkbox" name="black-refried-beans" value="black-refried-beans">
-									<p>Rice</p><input type="checkbox" name="rice" value="rice"></p>
+									<p><label for="c11">Jack Cheese</label></p><input type="checkbox" id="c11" name="jack-cheese" value="jack-cheese">
+									<p><label for="c12">Lettuce</label></p><input type="checkbox" id="c12" name="lettuce" value="lettuce">
+									<p><label for="c13">Black Refried Beans</label></p><input type="checkbox" id="c13" name="black-refried-beans" value="black-refried-beans">
+									<p><label for="c14">Rice</label></p><input type="checkbox" id="c14" name="rice" value="rice"></p>
 							</div>
 							<div id="options-tortilla">
 								Tortillas<br>
-									<p>Corn</p><input type="checkbox" name="corn" value="corn">
-									<p>Flour</p><input type="checkbox" name="flour" value="flour">
-									<p>Jicama</p><input type="checkbox" name="jicama" value="jicama"></p>
+									<p><label for="c15">Corn</label></p><input type="checkbox" id="c15" name="corn" value="corn">
+									<p><label for="c16">Flour</label></p><input type="checkbox" id="c16" name="flour" value="flour">
+									<p><label for="c17">Jicama</label></p><input type="checkbox" id="c17" name="jicama" value="jicama"></p>
 							</div>
 						</fieldset>
 						<h5>Additional Information</h5><br>

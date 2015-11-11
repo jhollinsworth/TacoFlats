@@ -426,16 +426,17 @@ h4 {
   margin-top: 16px; }
 
 #contact-info, #event-info, #options {
-  border: 1.5px solid #B3DFFA;
+  border: 2px solid #B3DFFA;
   padding: 24px;
   margin: 8px 0 8px 0;
   font-family: "Oswald", sans-serif;
   font-size: 1.125em;
   color: #F3E29D; }
 
+ /*
 #contact-info p {
-  color: #FFF; }
-
+	color: yellow;
+}*/
 legend {
   font-family: "Oswald", sans-serif;
   font-size: 1.25em;
@@ -444,22 +445,28 @@ legend {
 
 input[type="text"] {
   margin: 6px 0 8px 0;
-  color: #6F1B08;
+  color: #F3E29D;
   width: 50%;
-  border-style: none;
-  border-radius: 6px; }
+  border: 1px solid #F3E29D;
+  background-color: #6F1B08; }
 
 input[type="radio"] {
   margin: 6px 6px 6px 0; }
 
 input[type="date"], input[type="time"], input[type="location"] {
   margin: 6px 0 9px 0;
-  color: #6F1B08;
-  border-style: none;
-  border-radius: 6px; }
+  color: #F3E29D;
+  border: 1px solid #F3E29D;
+  background-color: #6F1B08; }
 
 .info-options {
-  margin-bottom: 8px; }
+  margin-bottom: 8px;
+  width: 170px;
+  background-color: #6F1B08;
+  border: 1px solid #F3E29D; }
+
+#people {
+  margin-top: 6px; }
 
 #options p {
   font-family: "Oswald", sans-serif;
@@ -481,9 +488,9 @@ textarea[name="addl-info"] {
   overflow: auto;
   font-family: "Oswald", sans-serif;
   font-size: 1.125em;
-  color: #6F1B08;
-  border-style: none;
-  border-radius: 6px; }
+  color: #F3E29D;
+  border: 1px solid #F3E29D;
+  background-color: #6F1B08; }
 
 #submit {
   width: 150px;
