@@ -31,14 +31,17 @@
 // MENU SHOW/HIDE
 
           $(document).ready(function() {
-                $("#food, #cocktails").click(function() {
+                $("#food, #cocktails, #brunch").click(function() {
                     $(".beer-menu").css("display", "none");
                 });
-                $("#beer, #food").click(function() {
+                $("#beer, #food, #brunch").click(function() {
                     $(".cocktail-menu").css("display", "none");
                 })
-                $("#beer, #cocktails").click(function() {
+                $("#beer, #cocktails, #brunch").click(function() {
                     $(".food-menu").css("display", "none");
+                })
+                $("#beer, #food, #cocktails").click(function() {
+                    $(".brunch-menu").css("display", "none");
                 })
                 $("#beer").click(function() {
                     $(".beer-menu").css("display", "block");
@@ -49,4 +52,58 @@
                 $("#cocktails").click(function() {
                     $(".cocktail-menu").css("display", "block");
                 })
+                $("#brunch").click(function() {
+                    $(".brunch-menu").css("display", "block");
+                })
           });
+
+
+// FOOTER LINKS HOVER
+
+          $(document).ready(function() {
+                $("#Dillo").hover(function() {
+                    $(this).attr("src", function(index, attr){
+                        return attr.replace("images/Armadillo-logo_sm_blue.png", "images/Armadillo-logo_sm_red.png");
+                    });
+                }, function (){
+                    $(this).attr("src", function(index, attr){
+                        return attr.replace("images/Armadillo-logo_sm_red.png", "images/Armadillo-logo_sm_blue.png");
+                    });
+                });
+                $("#FB").hover(function() {
+                    $(this).attr("src", function(index, attr){
+                        return attr.replace("images/Facebook_34_blue.png", "images/Facebook_34_red.png");
+                    });
+                }, function (){
+                    $(this).attr("src", function(index, attr){
+                        return attr.replace("images/Facebook_34_red.png", "images/Facebook_34_blue.png");
+                    });
+                });
+                $("#TWT").hover(function() {
+                    $(this).attr("src", function(index, attr){
+                        return attr.replace("images/Twitter_34_blue.png", "images/Twitter_34_red.png");
+                    });
+                }, function (){
+                    $(this).attr("src", function(index, attr){
+                        return attr.replace("images/Twitter_34_red.png", "images/Twitter_34_blue.png");
+                    });
+                });
+                $("#INST").hover(function() {
+                    $(this).attr("src", function(index, attr){
+                        return attr.replace("images/Instagram_34_blue.png", "images/Instagram_34_red.png");
+                    });
+                }, function (){
+                    $(this).attr("src", function(index, attr){
+                        return attr.replace("images/Instagram_34_red.png", "images/Instagram_34_blue.png");
+                    });
+                });
+                $("#design").hover(function() {
+                    $(this).attr("src", function(index, attr){
+                        return attr.replace("images/Design_link_blue.png", "images/Design_link_red.png");
+                    });
+                }, function (){
+                    $(this).attr("src", function(index, attr){
+                        return attr.replace("images/Design_link_red.png", "images/Design_link_blue.png");
+                    });
+                });
+            });

@@ -46,7 +46,7 @@ body {
 #header-rule {
   width: 100%;
   height: 18px;
-  background-color: #6F1B08; }
+  background-color: #85230D; }
 
 #logo-lockup {
   position: absolute;
@@ -94,13 +94,13 @@ body {
         height: 62px;
         width: 63px; }
     #nav-bar ul li:first-child {
-      background: url("../images/Icon-Menu_Mobile.png") center center no-repeat; }
+      background: url("../images/Icon-Menu-mobile.png") center center no-repeat; }
     #nav-bar ul li:nth-child(2) {
-      background: url("../images/Icon-History_Mobile.png") center center no-repeat; }
+      background: url("../images/Icon-History-mobile.png") center center no-repeat; }
     #nav-bar ul li:nth-child(3) {
-      background: url("../images/Icon-Press_Mobile.png") center center no-repeat; }
+      background: url("../images/Icon-Press-mobile.png") center center no-repeat; }
     #nav-bar ul li:nth-child(4) {
-      background: url("../images/Icon-Taquiza_Mobile.png") center center no-repeat; }
+      background: url("../images/Icon-Taquiza-mobile.png") center center no-repeat; }
     #nav-bar ul span {
       opacity: 0; }
 
@@ -108,7 +108,7 @@ body {
   width: 100%;
   margin-top: 0;
   display: block;
-  background-color: #F3E29D;
+  background-color: #FBD385;
   box-sizing: border-box;
   overflow: hidden; }
 
@@ -123,35 +123,37 @@ body {
 #outer-rule-top {
   width: 100%;
   height: 110px;
-  background-color: #F3E29D;
+  background-color: #FBD385;
   box-sizing: border-box;
   padding-top: 30px; }
   #outer-rule-top #inner-rule-top {
     width: 100%;
     height: 62px;
-    background-color: #C9A885; }
+    background-color: #D9A56F; }
 
 .hours-location {
   width: 100%;
-  background-color: #C9A885;
-  padding: 18px 3% 18px 3%;
+  background-color: #D9A56F;
+  padding: 18px 0 18px 3%;
   box-sizing: border-box;
   float: left;
-  background-image: url("../images/Oak_Yellow.png");
-  background-repeat: no-repeat;
-  background-position: bottom -100px left -600px; }
+  background-image: url("../images/WoodGrid_tan.jpg"); }
   .hours-location p {
     font-family: "Oswald", sans-serif;
     font-weight: 400;
     font-size: 1.125em;
-    color: #6F1B08;
+    color: #85230D;
     margin: 0;
     display: inline-block;
     vertical-align: top; }
-  .hours-location #phone {
-    font-size: 1.25em;
-    line-height: 1.325em;
-    margin-right: .75em; }
+  .hours-location #phone-email {
+    font-size: 1.125em;
+    margin-right: .25em;
+    text-align: right; }
+    .hours-location #phone-email a {
+      color: #85230D; }
+    .hours-location #phone-email a:hover {
+      color: #FFF; }
   .hours-location #hours {
     margin: 0 10px 10px 0; }
   .hours-location .map {
@@ -168,91 +170,153 @@ body {
 #outer-rule-bottom {
   width: 100%;
   height: 18px;
-  background-color: #6F1B08;
+  background-color: #85230D;
   clear: both; }
 
 #inner-rule-bottom {
   width: 100%;
   height: 62px;
-  background-color: #C9A885; }
+  background-color: #D9A56F; }
+
+#news-sidebar {
+  width: 90%;
+  background-color: #FBD385;
+  border-radius: 15px;
+  padding: 0 18px 18px 18px;
+  float: left;
+  margin: 36px 0 18px 18px;
+  box-sizing: border-box; }
+  #news-sidebar #fn-logo {
+    margin: -18px 0 -18px 5%; }
+  #news-sidebar p {
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 1.25em;
+    line-height: 1.325em;
+    color: #85230D;
+    margin: 12px auto 0 auto;
+    max-width: 450px; }
+
+#BBQ-lockup {
+  width: 303px;
+  position: relative;
+  margin: 0 auto; }
+  #BBQ-lockup h4 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    color: #85230D;
+    display: inline-block;
+    vertical-align: top;
+    margin: 30px 0 48px 0; }
+  #BBQ-lockup #BBQ-logo {
+    position: absolute;
+    width: 116px;
+    z-index: 3; }
+  #BBQ-lockup #BBQ-taco {
+    margin-top: -34px;
+    width: 302px; }
 
 .taquiza-info {
   width: 100%;
   padding: 18px 3% 18px 3%;
-  background-color: #6F1B08;
+  background-color: #85230D;
   box-sizing: border-box;
-  background-image: url("../images/Oak_Tan.png");
-  background-repeat: no-repeat;
-  background-position: bottom -100px right -600px; }
+  background-image: url("../images/WoodGrid_red.jpg"); }
 
 #taquiza-header {
   font-family: SantEliaRough-BoldTwo, script;
   font-weight: normal;
   font-style: normal;
   font-size: 5em;
-  color: #F3E29D;
+  text-shadow: 4px 4px 12px #260908;
+  color: #FBD385;
   margin: 0 0 0 -9px; }
 
 #taquiza-story {
   margin: 9px 0 32px 0; }
-
-#taquiza-paragraph {
-  font-family: "Oswald", sans-serif;
-  font-weight: 300;
-  font-size: 1.25em;
-  line-height: 1.375em;
-  color: #F3E29D; }
-
-#book {
-  float: right;
-  width: 150px;
-  margin: 0;
-  padding: 6px 6px 5px 6px;
-  background-color: #C9A885;
-  font-family: "Oswald", sans-serif;
-  font-size: 1.125em;
-  font-weight: 700;
-  color: #6F1B08;
-  border: 0;
-  -webkit-border-radius: 7px;
-  -moz-border-radius: 7px;
-  border-radius: 7px; }
-  #book a {
+  #taquiza-story #taquiza-paragraph {
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 1.25em;
+    line-height: 1.325em;
+    text-shadow: 4px 4px 6px #260908;
+    color: #FBD385;
+    margin: 0 0 18px 0; }
+  #taquiza-story a {
     text-decoration: none;
-    color: #6F1B08; }
-  #book a:hover {
-    color: #FFF;
-    background-color: #4BB7F7; }
+    color: #85230D; }
+    #taquiza-story a button {
+      float: right;
+      width: 150px;
+      margin: 0;
+      padding: 6px 6px 5px 6px;
+      font-family: "Oswald", sans-serif;
+      font-size: 1.125em;
+      font-weight: 700;
+      background-color: #FBD385;
+      border: 0;
+      -webkit-border-radius: 7px;
+      -moz-border-radius: 7px;
+      border-radius: 7px; }
+  #taquiza-story a:hover {
+    color: #FFF; }
+    #taquiza-story a:hover button {
+      background-color: #4BB7F7; }
 
 #taquiza-collage {
-  width: 100%;
+  width: 340px;
+  /*margin: 0 auto;*/
   margin: 0 0 18px 0; }
   #taquiza-collage img {
     width: 340px; }
 
 footer {
   width: 100%;
-  height: 180px;
-  padding-top: 26px;
+  height: 115px;
+  padding: 0 18px 0 18px;
   box-sizing: border-box; }
 
-.social-media {
-  width: 244px;
-  margin: 0 auto;
-  padding: 0 0 0 36px; }
-  .social-media img {
-    margin-right: 24px; }
-
 #bottom-logo {
-  width: 202px;
-  margin: 10px auto 0 auto; }
+  width: 250px;
+  margin: 10px auto 30px auto; }
+  #bottom-logo a {
+    float: left;
+    margin-right: -24px; }
+  #bottom-logo p {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1em;
+    color: #4BB7F7;
+    text-align: right;
+    margin: 0;
+    padding-top: 18px; }
+
+#bottom-logo:hover p {
+  color: #85230D; }
+
+.social-media {
+  width: 155px;
+  float: left;
+  padding: 0;
+  margin: 0; }
+  .social-media a:first-child {
+    margin-right: 19px; }
+  .social-media a:nth-child(2) {
+    margin-right: 18px; }
+  .social-media a:nth-child(3) {
+    margin-right: 0; }
+
+#design {
+  float: right; }
 
 /* --MENU-- */
 .content-wrapper {
   width: 100%;
   margin-top: 0;
   display: block;
-  background-color: #6F1B08;
+  background-color: #85230D;
   box-sizing: border-box;
   overflow: hidden;
   padding: 24px 0 0 0; }
@@ -274,16 +338,16 @@ footer {
     left: 90px; } }
 #menu-buttons {
   width: 150px;
-  margin: 128px auto 12px auto; }
+  margin: 129px auto 12px auto; }
   #menu-buttons button {
     width: 150px;
     margin: 6px auto 6px auto;
     padding: 6px 6px 5px 6px;
-    background-color: #C9A885;
+    background-color: #D9A56F;
     font-family: "Oswald", sans-serif;
     font-size: 1.125em;
     font-weight: 700;
-    color: #6F1B08;
+    color: #85230D;
     border: 0;
     -webkit-border-radius: 7px;
     -moz-border-radius: 7px;
@@ -299,19 +363,16 @@ h2 {
   font-weight: normal;
   font-style: normal;
   font-size: 2.5em;
-  color: #F3E29D;
+  color: #FBD385;
   margin: 0 0 6px 0; }
 
-.beer-menu, .food-menu, .cocktail-menu {
+.beer-menu, .food-menu, .cocktail-menu, .brunch-menu {
   margin-bottom: 30px; }
 
 .beer-menu {
   display: block; }
 
-.food-menu {
-  display: none; }
-
-.cocktail-menu {
+.food-menu, .cocktail-menu, .brunch-menu {
   display: none; }
 
 hr {
@@ -320,66 +381,78 @@ hr {
   border-style: none none dotted;
   color: #FFF; }
 
-#menu-1, #menu-2, #menu-text, #menu-3, #menu-4, #menu-text-fd, #menu-5, #menu-6, #menu-text-ckt {
+#menu-1, #menu-2, #menu-text, #menu-3, #menu-4, #menu-text-fd, #menu-5, #menu-6, #menu-text-ckt, #menu-7, #menu-8, #menu-text-news {
   width: 348px;
   display: inline-block;
   vertical-align: top;
   box-sizing: border-box; }
 
-#menu-1, #menu-2, #menu-3, #menu-4, #menu-5, #menu-6 {
-  background-color: #F3E29D;
+#menu-1, #menu-2, #menu-3, #menu-4, #menu-5, #menu-6, #menu-7, #menu-8 {
+  background-color: #FBD385;
   border-radius: 7px;
-  padding: 1em; }
-  #menu-1 p, #menu-2 p, #menu-3 p, #menu-4 p, #menu-5 p, #menu-6 p {
-    font-family: "Oswald", sans-serif;
-    font-weight: 300;
-    font-size: 1.25em;
-    line-height: 1.5em;
-    color: #000; }
+  padding: 1em;
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  font-size: 1.25em;
+  line-height: 1.5em;
+  color: #000; }
+  #menu-1 span, #menu-2 span, #menu-3 span, #menu-4 span, #menu-5 span, #menu-6 span, #menu-7 span, #menu-8 span {
+    font-weight: 400;
+    color: #85230D; }
 
 #menu-1 p, #menu-2 p {
   margin: 0 0 1.5em 0; }
 
-#menu-1, #menu-3, #menu-5 {
+#menu-1, #menu-3, #menu-5, #menu-7 {
   margin: 0 0 20px 0; }
 
-#menu-text, #menu-text-fd, #menu-text-ckt {
-  color: #F3E29D;
+#menu-text, #menu-text-fd, #menu-text-ckt, #menu-text-news {
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  font-size: 1.25em;
+  line-height: 1.25em;
+  color: #FBD385;
   padding: 1em .5em 0 1em; }
-  #menu-text p, #menu-text-fd p, #menu-text-ckt p {
-    margin: 0;
-    font-family: "Oswald", sans-serif;
-    font-weight: 300;
-    font-size: 1.25em;
-    line-height: 1.25em; }
 
 h3 {
   font-family: "Oswald", sans-serif;
   font-size: 1.25em;
   font-weight: 700;
-  color: #6F1B08;
+  color: #85230D;
   margin: 0 0 1em 0; }
 
 #menu-3 p {
   margin: 0; }
 
-#menu-4 p, #menu-5 p, #menu-6 p {
+#menu-4 p, #menu-5 p, #menu-6 p, #menu-7 p, #menu-8 p {
   margin: 0 0 .5em 0; }
 
-#menu-4 h3 {
+#menu-4 h3, #menu-7 h3 {
   margin: 0; }
 
 h4 {
   font-family: "Oswald", sans-serif;
-  font-size: 1.25em;
+  font-size: 1.125em;
   font-weight: 400;
   color: #000;
   margin: 0; }
 
+.menu-salsas {
+  background-color: #B3DFFA;
+  border-radius: 7px;
+  padding: 1em;
+  color: #000;
+  margin: 34px 0 0 0; }
+  .menu-salsas span {
+    font-weight: 400;
+    font-style: italic;
+    color: #85230D; }
+
 #secondary-rule-bottom {
   width: 100%;
   height: 30px;
-  background-color: #F3E29D; }
+  background-color: #FBD385; }
 
 /* --TAQUIZA-- */
 #taquiza-wrapper {
@@ -400,7 +473,7 @@ h4 {
     font-weight: 300;
     font-size: 1.25em;
     line-height: 1.25em;
-    color: #F3E29D; }
+    color: #FBD385; }
 
 #taquiza-form {
   width: 348px;
@@ -425,13 +498,13 @@ h4 {
 #options-tortilla {
   margin-top: 16px; }
 
-#contact-info, #event-info, #options {
+#contact-event-info, #options {
   border: 2px solid #B3DFFA;
   padding: 24px;
   margin: 8px 0 8px 0;
   font-family: "Oswald", sans-serif;
   font-size: 1.125em;
-  color: #F3E29D; }
+  color: #FBD385; }
 
 legend {
   font-family: "Oswald", sans-serif;
@@ -441,25 +514,25 @@ legend {
 
 input[type="text"] {
   margin: 6px 0 8px 0;
-  color: #F3E29D;
+  color: #FBD385;
   width: 50%;
-  border: 1px solid #F3E29D;
-  background-color: #6F1B08; }
+  border: 1px solid #FBD385;
+  background-color: #85230D; }
 
 input[type="radio"] {
   margin: 6px 6px 6px 0; }
 
 input[type="date"], input[type="time"], input[type="location"] {
   margin: 6px 0 9px 0;
-  color: #F3E29D;
-  border: 1px solid #F3E29D;
-  background-color: #6F1B08; }
+  color: #FBD385;
+  border: 1px solid #FBD385;
+  background-color: #85230D; }
 
 .info-options {
-  margin-bottom: 8px;
+  margin: 12px 0 8px 0;
   width: 170px;
-  background-color: #6F1B08;
-  border: 1px solid #F3E29D; }
+  background-color: #85230D;
+  border: 1px solid #FBD385; }
 
 #people {
   margin-top: 6px; }
@@ -475,7 +548,7 @@ h5 {
   font-family: "Oswald", sans-serif;
   font-size: 1.25em;
   font-weight: 400;
-  color: #F3E29D;
+  color: #FBD385;
   margin: 12px 0 -12px 0; }
 
 textarea[name="addl-info"] {
@@ -484,15 +557,15 @@ textarea[name="addl-info"] {
   overflow: auto;
   font-family: "Oswald", sans-serif;
   font-size: 1.125em;
-  color: #F3E29D;
-  border: 1px solid #F3E29D;
-  background-color: #6F1B08; }
+  color: #FBD385;
+  border: 1px solid #FBD385;
+  background-color: #85230D; }
 
 #submit {
   width: 150px;
   margin-top: 9px;
   padding: 6px 6px 5px 6px;
-  background-color: #C9A885;
+  background-color: #D9A56F;
   font-family: "Oswald", sans-serif;
   font-size: 1.125em;
   font-weight: 700;
@@ -502,7 +575,7 @@ textarea[name="addl-info"] {
   border-radius: 7px; }
   #submit a {
     text-decoration: none;
-    color: #6F1B08; }
+    color: #85230D; }
 
 /* --HISTORY-- */
 #history-text p, #history-1 p, #history-2 p {
@@ -511,7 +584,7 @@ textarea[name="addl-info"] {
   font-weight: 300;
   font-size: 1.125em;
   line-height: 1.25em;
-  color: #F3E29D; }
+  color: #FBD385; }
 
 #history-1 img:first-child {
   margin-left: -24px;
@@ -530,7 +603,7 @@ textarea[name="addl-info"] {
 .reviews {
   width: 100%;
   margin: 0 auto;
-  background-color: #F3E29D;
+  background-color: #FBD385;
   border-radius: 7px;
   box-sizing: border-box;
   overflow: hidden;
@@ -552,7 +625,7 @@ textarea[name="addl-info"] {
   font-size: 1.25em;
   line-height: 2em; }
   #direct a {
-    color: #6F1B08; }
+    color: #85230D; }
 
 /* --CONFIRMATION-- */
 .gracias-wrapper {
@@ -611,7 +684,10 @@ textarea[name="addl-info"] {
 /* 493 BREAKPOINT */
 @media (min-width: 493px) {
   .hours-location {
-    background-position: bottom -100px left -500px; }
+    background-position: bottom -100px left -500px;
+    padding: 18px 3% 18px 3%; }
+    .hours-location #phone-email {
+      margin-right: .75em; }
 
   .hours-location #address {
     width: 442px;
@@ -625,10 +701,9 @@ textarea[name="addl-info"] {
     margin: 0 auto; }
 
   #taquiza-collage {
-    width: 77%;
     margin: 0 auto 18px auto; }
     #taquiza-collage img {
-      width: 400px; }
+      width: 370px; }
 
   #history-wrapper {
     width: 90%;
@@ -675,7 +750,6 @@ textarea[name="addl-info"] {
       width: 319px; }
 
   #image-container {
-    /*height: 672px;*/
     clear: both; }
 
   .hours-location .map {
@@ -697,28 +771,17 @@ textarea[name="addl-info"] {
   #taquiza-header {
     margin: 0; }
 
-  #taquiza-collage {
-    width: 78%; }
-    #taquiza-collage img {
-      width: 460px; }
-
-  footer {
-    height: 103px;
-    padding-top: 16px;
-    box-sizing: border-box; }
-
-  .social-media {
-    margin: 10px 0 0 3%;
-    float: left;
-    padding: 0; }
-
-  #bottom-logo {
-    margin: 0 3% 0 0;
-    float: right; }
-
   #armadillo {
     width: 600px;
     margin: 30px auto 0 auto; }
+
+  #news-sidebar {
+    margin: 36px 0 18px 30px; }
+    #news-sidebar #fn-logo {
+      margin: -18px 0 -18px 10%; }
+
+  #BBQ-lockup #BBQ-taco {
+    width: 310px; }
 
   #taquiza-wrapper {
     width: 520px; }
@@ -752,7 +815,7 @@ textarea[name="addl-info"] {
     margin: -14px auto 30px auto; }
 
   #menu-buttons {
-    width: 460px; }
+    width: 614px; }
     #menu-buttons button {
       width: 150px;
       margin: 0 auto; }
@@ -760,17 +823,44 @@ textarea[name="addl-info"] {
   #menus-wrapper {
     width: 756px; }
 
-  #menu-1, #menu-3, #menu-5 {
+  #menu-1, #menu-3, #menu-5, #menu-7 {
     margin: 0 10px 0 0; }
 
-  #menu-text, #menu-text-fd, #menu-text-ckt {
+  #menu-text, #menu-text-fd, #menu-text-ckt, #menu-text-news {
     width: 711px;
     padding: 1em 1em 0 1em; }
 
   #press-wrapper {
     padding: 60px 5% 30px 5%;
     width: 638.125px;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+
+  #news-sidebar {
+    width: 352px;
+    margin: 36px 10px 18px 18px; }
+    #news-sidebar #fn-logo {
+      margin: -18px 0 -18px 5%; }
+
+  #BBQ-lockup {
+    width: 303px;
+    position: relative;
+    margin: 0 auto; }
+
+  #taquiza-collage img {
+    width: 420px; }
+
+  footer {
+    height: 54px;
+    padding: 0 18px 0 18px;
+    box-sizing: border-box; }
+
+  .social-media {
+    float: none;
+    margin: 18px auto -38px auto; }
+
+  #bottom-logo {
+    margin: -9px 3% 0 0;
+    float: left; } }
 /* 881 BREAKPOINT */
 @media (min-width: 881px) {
   #nav-bar {
@@ -811,11 +901,8 @@ textarea[name="addl-info"] {
   .taquiza-info {
     background-position: bottom -100px right -400px; }
 
-  #taquiza-collage {
-    width: 100%;
-    margin: 0 0 18px 62px; }
-    #taquiza-collage img {
-      width: 606px; }
+  #news-sidebar {
+    margin: 36px 18px 18px 18px; }
 
   #history-2 img:first-child {
     margin-left: 0; }
@@ -839,10 +926,10 @@ textarea[name="addl-info"] {
   .hours-location {
     background-position: bottom -100px left -320px; }
 
-  .hours-location #phone, #hours {
+  .hours-location #phone-email, #hours {
     float: left; }
 
-  .hours-location #phone {
+  .hours-location #phone-email {
     margin-right: .975em; }
 
   .hours-location .map {
@@ -867,12 +954,31 @@ textarea[name="addl-info"] {
     float: left;
     margin: 0 0 14px 0; }
 
-  #taquiza-paragraph {
-    width: 908px;
-    margin: 0 auto 32px auto; }
+  #news-sidebar {
+    width: 402px;
+    padding: 0 24px 36px 24px;
+    margin: 56px 24px 18px 18px; }
+    #news-sidebar p {
+      font-size: 1.375em;
+      line-height: 1.375em; }
 
-  #book {
-    margin: 0 10% 0 0; } }
+  #BBQ-lockup {
+    width: 353px; }
+    #BBQ-lockup h4 {
+      font-size: 1.25em;
+      margin: 30px 0 48px 0;
+      color: #85230D;
+      display: inline-block;
+      vertical-align: top; }
+    #BBQ-lockup #BBQ-logo {
+      width: 126px; }
+    #BBQ-lockup #BBQ-taco {
+      margin-top: -34px;
+      width: 352px; }
+
+  #taquiza-story {
+    width: 908px;
+    margin: 0 auto 32px auto; } }
 /* 1024 BREAKPOINT */
 @media (min-width: 1024px) {
   #nav-bar {
@@ -885,6 +991,12 @@ textarea[name="addl-info"] {
 
   .taquiza-info {
     padding: 18px 3% 18px 3%; }
+
+  #taquiza-collage img {
+    width: 460px; }
+
+  #news-sidebar {
+    margin: 56px 32px 18px 24px; }
 
   .hours-location {
     padding: 18px 3% 18px 3%; }
@@ -907,10 +1019,19 @@ textarea[name="addl-info"] {
   .content-wrapper {
     padding: 24px 0 0 0; }
 
+  #news-sidebar {
+    margin: 56px 32px 18px 32px; }
+
+  #taquiza-collage {
+    width: 100%;
+    margin: 0 0 18px 62px; }
+    #taquiza-collage img {
+      width: 606px; }
+
   #menus-wrapper {
     width: 1063px; }
 
-  #menu-text, #menu-text-fd, #menu-text-ckt {
+  #menu-text, #menu-text-fd, #menu-text-ckt, #menu-text-news {
     width: 348px;
     padding: 0 0 0 1em; }
 
