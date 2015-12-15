@@ -1,19 +1,16 @@
 @import url("//hello.myfonts.net/count/2fa3ee");
-
-  
 @font-face {font-family: 'SantEliaRough-BoldTwo';src: url('webfonts/2FA3EE_0_0.eot');src: url('webfonts/2FA3EE_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2FA3EE_0_0.woff2') format('woff2'),url('webfonts/2FA3EE_0_0.woff') format('woff'),url('webfonts/2FA3EE_0_0.ttf') format('truetype');}
- 
 @import "partials";
 
 html {
 	overflow: -moz-scrollbars-vertical; 
 	overflow-y: scroll;
 }
-
 body {
 	overflow: hidden;
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
+	background-color: $secondary-blue;
 }
 
 /* --INDEX-- */
@@ -29,7 +26,6 @@ body {
     background-color: #9C4927;
     z-index: 100;
 }
-
 #status {
     width: 381px;
     height: 136px;
@@ -41,7 +37,6 @@ body {
     background-position: center;
     margin: -68px 0 0 -190.5px;
 }
-
 .wrapper {
 	width: 100%;
 	background-color: $secondary-blue;
@@ -50,22 +45,20 @@ body {
 	position: relative;
 	margin: 0 auto;
 }
-
 #header-rule {
 	width: 100%;
 	height: 18px;
 	background-color: $primary-red;
 } 
-
 #logo-lockup {
 	position: absolute;
 	top: 48px;
 	left: 2.5%;
+	z-index: 2;
 	img {
 		width: 175px;
 	}
 }
-
 #nav-bar {
 	overflow: hidden;
 	width: 100%;
@@ -109,34 +102,30 @@ body {
 			}
 		}
 			li:first-child {
-				background: url("../images/Icon-Menu_Mobile.png") center center no-repeat;
+				background: url("../images/Icon-Menu-mobile.png") center center no-repeat;
 			}
 			li:nth-child(2) {
-				background: url("../images/Icon-History_Mobile.png") center center no-repeat;
+				background: url("../images/Icon-History-mobile.png") center center no-repeat;
 			}
 			li:nth-child(3) {
-				background: url("../images/Icon-Press_Mobile.png") center center no-repeat;
+				background: url("../images/Icon-Press-mobile.png") center center no-repeat;
 			}
 			li:nth-child(4) {
-				background: url("../images/Icon-Taquiza_Mobile.png") center center no-repeat;
+				background: url("../images/Icon-Taquiza-mobile.png") center center no-repeat;
 			}
 			span {
 				opacity: 0;
 			}
 	}
 }
-
 #image-container {
 	width: 100%;
-	/*height: 390px;*/
 	margin-top: 0;
 	display: block;
 	background-color: $secondary-yellow;
-	/*background-color: #a361fb;*/
 	box-sizing: border-box;
 	overflow: hidden;
 }
-
 .item img {
 	width: 100%;
 	p {
@@ -146,7 +135,6 @@ body {
 		margin: 300px 0 0 200px;
 	}
 }
-
 #outer-rule-top {
 	width: 100%;
 	height: 110px;
@@ -159,16 +147,13 @@ body {
 		background-color: $secondary-tan;
 	}
 }
-
 .hours-location {
 	width: 100%;
 	background-color: $secondary-tan;
-	padding: 18px 3% 18px 3%;
+	padding: 18px 0 18px 3%;
 	box-sizing: border-box;
 	float: left;
-	background-image: url("../images/Oak_Yellow.png");
-	background-repeat: no-repeat;
-	background-position: bottom -100px left -600px;
+	background-image: url("../images/WoodGrid_tan.jpg");
 	p {
 		font-family: $text-font;
 		font-weight: $subhead-weight;
@@ -178,10 +163,16 @@ body {
 		display: inline-block;
 		vertical-align: top;
 	}
-	#phone {
-		font-size: 1.25em;
-		line-height: 1.325em;
-		margin-right: .75em;
+	#phone-email {
+		font-size: 1.125em;
+		margin-right: .25em;
+		text-align: right;
+		a {
+			color: $primary-red;
+		}
+		a:hover {
+			color: #FFF;
+		}
 	}
 	#hours {
 		margin: 0 10px 10px 0;
@@ -200,102 +191,206 @@ body {
 		line-height: 1.25em;
 	}
 }
-
 #outer-rule-bottom {
 	width: 100%;
 	height: 18px;
 	background-color: $primary-red;
 	clear: both;
 }
-
 #inner-rule-bottom {
 	width: 100%;
 	height: 62px;
 	background-color: $secondary-tan;
 }
-
+#news-sidebar {
+	width: 90%;
+	background-color: $secondary-yellow;
+	border-radius: 15px;
+	padding: 0 18px 18px 18px;
+	float: left;
+	margin: 36px 0 18px 18px;
+	box-sizing: border-box;
+	#fn-logo {
+		margin: -18px 0 -18px 5%;
+	}
+	p {
+		font-family: $text-font;
+		font-weight: $body-weight;
+		font-size: 1.25em;
+		line-height: 1.325em;
+		color: $primary-red;
+		margin: 12px auto 0 auto;
+		max-width: 450px;
+	}
+}
+#BBQ-lockup {
+	width: 303px;
+	position: relative;
+	margin: 0 auto;
+	h4 {
+		font-family: $text-font;
+		font-weight: $subhead-weight;
+		font-size: 1em;
+		color: $primary-red;
+		display: inline-block;
+		vertical-align: top;
+		margin: 30px 0 48px 0;
+	}
+	#BBQ-logo {
+		position: absolute;
+		width: 116px;
+		z-index: 3;
+	}
+	#BBQ-taco {
+		margin-top: -34px;
+		width: 302px;
+	}
+}
 .taquiza-info {
 	width: 100%;
 	padding: 18px 3% 18px 3%;
 	background-color: $primary-red;
 	box-sizing: border-box;
-	background-image: url("../images/Oak_Tan.png");
-	background-repeat: no-repeat;
-	background-position: bottom -100px right -600px;
+	background-image: url("../images/WoodGrid_red.jpg");
 }
-
 #taquiza-header {
 	font-family: $display-font;
 	font-weight: normal;
 	font-style: normal;
 	font-size: 5em;
+	text-shadow: 4px 4px 12px #260908;
 	color: $secondary-yellow;
 	margin: 0 0 0 -9px;
 }
-
-#taquiza-paragraph {
-	font-family: $text-font;
-	font-weight: $body-weight;
-	font-size: 1.25em;
-	line-height: 1.375em;
-	color: $secondary-yellow; 
+#taquiza-story {
 	margin: 9px 0 32px 0;
+	#taquiza-paragraph {
+		font-family: $text-font;
+		font-weight: $body-weight;
+		font-size: 1.25em;
+		line-height: 1.325em;
+		text-shadow: 4px 4px 6px #260908;
+		color: $secondary-yellow; 
+		margin: 0 0 18px 0;
+	}
+	a {
+		text-decoration: none;
+		color: $primary-red;
+		button {
+			float: right;
+			width: 150px;
+			margin: 0;
+			padding: 6px 6px 5px 6px;
+			font-family: $text-font;
+			font-size: 1.125em;
+			font-weight: $header-weight;
+			background-color: $secondary-yellow;
+			border: 0;
+			-webkit-border-radius: 7px;
+			-moz-border-radius: 7px;
+			border-radius: 7px;
+		}
+	}
+	a:hover {
+		color: #FFF;
+		button {
+			background-color: $primary-blue;
+		}
+	}
 }
-
 #taquiza-collage {
-	width: 100%;
+	width: 340px;
+	/*margin: 0 auto;*/
 	margin: 0 0 18px 0;
 	img {
 		width: 340px;
 	}
 }
-
 footer {
 	width: 100%;
-	height: 180px;
-	padding-top: 26px;
+	height: 115px;
+	padding: 0 18px 0 18px;
 	box-sizing: border-box;
 }
-
-.social-media {
-	width: 244px;
-	margin: 0 auto;
-	padding: 0 0 0 36px;
-	img {
-		margin-right: 24px;
+#bottom-logo {
+	width: 250px;
+	margin: 10px auto 30px auto;
+	a {
+		float: left;
+		margin-right: -24px;
+	}
+	p {
+		font-family: $text-font;
+		font-weight: $subhead-weight;
+		font-size: 1em;
+		line-height: 1em;
+		color: $primary-blue;	
+		text-align: right;
+		margin: 0;
+		padding-top: 18px;
 	}
 }
-
-#bottom-logo {
-	width: 202px;
-	margin: 10px auto 0 auto;
+#bottom-logo:hover {
+	p {
+		color: $primary-red;
+	}
 }
-
-
+.social-media {
+	width: 155px;
+	float: left;
+	padding: 0;
+	margin: 0;
+	a:first-child {
+		margin-right: 19px;
+	}
+	a:nth-child(2) {
+		margin-right: 18px;
+	}
+	a:nth-child(3) {
+		margin-right: 0;
+	}
+}
+#design {
+	float: right;
+}
 
 /* --MENU-- */
 
 .content-wrapper {
 	width: 100%;
-	margin-top: 62px;
+	margin-top: 0;
 	display: block;
 	background-color: $primary-red;
 	box-sizing: border-box;
 	overflow: hidden;
 	padding: 24px 0 0 0;
 }
-
 #armadillo {
-	width: 580px;
-	margin: 0 auto;
+	width: 600px;
+	margin: 30px 0 0 -60px;
+	position: relative;
+	img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		animation: walk 5.7s linear forwards;
+		z-index: 1;
+	}
+	@keyframes walk {
+		from {
+			left: 0;
+			}
+		to {
+			left: 90px;
+			}
+	}
 }
-
 #menu-buttons {
-	width: 460px;
-	margin: 20px auto;
+	width: 150px;
+	margin: 129px auto 12px auto;
 	button {
 		width: 150px;
-		margin: 0 auto;
+		margin: 6px auto 6px auto;
 		padding: 6px 6px 5px 6px;
 		background-color: $secondary-tan;
 		font-family: $text-font;
@@ -308,13 +403,11 @@ footer {
 		border-radius: 7px;
 	}
 }
-
 #menus-wrapper {
-	width: 1063px;
+	width: 352px;
 	margin: 0 auto;
 	box-sizing: border-box;
 }
-
 h2 {
 	font-family: $display-font;
 	font-weight: normal;
@@ -323,70 +416,56 @@ h2 {
 	color: $secondary-yellow;
 	margin: 0 0 6px 0;
 }
-
-.beer-menu, .food-menu, .cocktail-menu {
+.beer-menu, .food-menu, .cocktail-menu, .brunch-menu {
 	margin-bottom: 30px;
 }
-
 .beer-menu {
 	display: block;
 }
-
-.food-menu {
+.food-menu, .cocktail-menu, .brunch-menu {
 	display: none;
 }
-
-.cocktail-menu {
-	display: none;
-}
-
 hr {
 	background-color: none;
 	border: $primary-blue 3px dotted;
 	border-style: none none dotted;
 	color: #FFF;
 }
-
-#menu-1, #menu-2, #menu-text, #menu-3, #menu-4, #menu-text-fd, #menu-5, #menu-6, #menu-text-ckt {
+#menu-1, #menu-2, #menu-text, #menu-3, #menu-4, #menu-text-fd, #menu-5, #menu-6, #menu-text-ckt, #menu-7, #menu-8, #menu-text-news {
 	width: 348px;
 	display: inline-block;
 	vertical-align: top;
 	box-sizing: border-box;
 }
-
-#menu-1, #menu-2, #menu-3, #menu-4, #menu-5, #menu-6 {
+#menu-1, #menu-2, #menu-3, #menu-4, #menu-5, #menu-6, #menu-7, #menu-8 {
 	background-color: $secondary-yellow;
 	border-radius: 7px;
 	padding: 1em;
-	p {
-		font-family: $text-font;
-		font-weight: $body-weight;
-		font-size: 1.25em;
-		line-height: 1.5em;
-		color: #000;
+	font-family: $text-font;
+	font-weight: $body-weight;
+	font-size: 1.25em;
+	line-height: 1.5em;
+	color: #000;
+	span {
+		font-weight: $subhead-weight;
+		color: $primary-red;
 	}
 }
-
 #menu-1 p, #menu-2 p {
 		margin: 0 0 1.5em 0;
 }
-
-#menu-1, #menu-3, #menu-5 {
-	margin-right: 10px;
+#menu-1, #menu-3, #menu-5, #menu-7 {
+	margin: 0 0 20px 0;
 }
-
-#menu-text, #menu-text-fd, #menu-text-ckt {
+#menu-text, #menu-text-fd, #menu-text-ckt, #menu-text-news {
+	margin: 0;
+	font-family: $text-font;
+	font-weight: $body-weight;
+	font-size: 1.25em;
+	line-height: 1.25em;
 	color: $secondary-yellow;
-	padding-left: 1em;
-	p {
-		margin: 0;
-		font-family: $text-font;
-		font-weight: $body-weight;
-		font-size: 1.25em;
-		line-height: 1.25em;
-	}
+	padding: 1em .5em 0 1em;
 }
-
 h3 {
 	font-family: $text-font;
 	font-size: 1.25em;
@@ -394,49 +473,54 @@ h3 {
 	color: $primary-red;
 	margin: 0 0 1em 0;
 }
-
 #menu-3 p {
 	margin: 0;
 }
-
-#menu-4 p, #menu-5 p, #menu-6 p {
+#menu-4 p, #menu-5 p, #menu-6 p, #menu-7 p, #menu-8 p {
 	margin: 0 0 .5em 0;
 }
-
-#menu-4 h3 {
+#menu-4 h3, #menu-7 h3 {
 	margin: 0;
 }
-
 h4 {
 	font-family: $text-font;
-	font-size: 1.25em;
+	font-size: 1.125em;
 	font-weight: $subhead-weight;
 	color: #000;
 	margin: 0;
 }
-
+.menu-salsas {
+	background-color: $secondary-blue;
+	border-radius: 7px;
+	padding: 1em;
+	color: #000;
+	margin: 34px 0 0 0;
+	span {
+		font-weight: $subhead-weight;
+		font-style: italic;
+		color: $primary-red;
+	}
+}
 #secondary-rule-bottom {
 	width: 100%;
 	height: 30px;
 	background-color: $secondary-yellow;
 }
 
-
-
 /* --TAQUIZA-- */
 
 #taquiza-wrapper {
-	width: 1063px;
+	width: 352px;
 	margin: 0 auto 30px auto;
 	padding-top: 62px;
 	box-sizing: border-box;
 }
-
 #taquiza-info {
-	width: 520px;
+	width: 348px;
 	display: inline-block;
 	vertical-align: top;
 	padding-right: 1em;
+	margin-bottom: 18px;
 	p {
 		margin: 0;
 		font-family: $text-font;
@@ -446,23 +530,19 @@ h4 {
 		color: $secondary-yellow;
 	}
 }
-
 #taquiza-form {
-	width: 520px;
+	width: 348px;
 	display: inline-block;
 }
-
 #options-meats {
 	width: 124px;
 	display: inline-block;
 	float: left;
 	margin-right: 30px;
 }
-
 #options-apps {
 	display: inline-block;
 }
-
 #options-toppings {
 	width: 124px;
 	display: inline-block;
@@ -470,54 +550,48 @@ h4 {
 	float: left;
 	margin: 16px 30px 0 0;
 }
-
 #options-tortilla {
 	margin-top: 16px;
 }
-
-#contact-info, #event-info, #options {
-	border: 1.5px solid $secondary-blue;
+#contact-event-info, #options {
+	border: 2px solid $secondary-blue;
 	padding: 24px;
 	margin: 8px 0 8px 0;
 	font-family: $text-font;
 	font-size: 1.125em;
 	color: $secondary-yellow;
 }
-
-#contact-info p {
-	color: #FFF;
-}
-
 legend {
 	font-family: $text-font;
 	font-size: 1.25em;
 	font-weight: $subhead-weight;
-	color: $secondary-yellow;
+	color: $secondary-blue;
 }
-
 input[type="text"] {
 	margin: 6px 0 8px 0;
-	color: $primary-red;
+	color: $secondary-yellow;
 	width: 50%;
-	border-style: none;
-	border-radius: 6px;
+	border: 1px solid $secondary-yellow;
+	background-color: $primary-red;
 }
-
 input[type="radio"] {
 	margin: 6px 6px 6px 0;
 }
-
 input[type="date"], input[type="time"], input[type="location"] {
 	margin: 6px 0 9px 0;
-	color: $primary-red;
-	border-style: none;
-	border-radius: 6px;
+	color: $secondary-yellow;
+	border: 1px solid $secondary-yellow;
+	background-color: $primary-red;
 }
-
 .info-options {
-	margin-bottom: 8px;
+	margin: 12px 0 8px 0;
+	width: 170px;
+	background-color: $primary-red;
+	border: 1px solid $secondary-yellow;
 }
-
+#people {
+		margin-top: 6px;
+}
 #options p {
 	font-family: $text-font;
 	font-weight: $body-weight;
@@ -525,7 +599,6 @@ input[type="date"], input[type="time"], input[type="location"] {
 	color: #FFF;
 	margin: 6px 0 -6px 0;
 }
-
 h5 {
 	font-family: $text-font;
 	font-size: 1.25em;
@@ -533,19 +606,17 @@ h5 {
 	color: $secondary-yellow;
 	margin: 12px 0 -12px 0;
 }
-
 textarea[name="addl-info"] {
 	width: 60%;
 	height: 120px;
 	overflow: auto;
 	font-family: $text-font;
 	font-size: 1.125em;
-	color: $primary-red;
-	border-style: none;
-	border-radius: 6px;
+	color: $secondary-yellow;
+	border: 1px solid $secondary-yellow;
+	background-color: $primary-red;
 }
-
-input[type="submit"] {
+#submit {
 	width: 150px;
 	margin-top: 9px;
 	padding: 6px 6px 5px 6px;
@@ -553,76 +624,184 @@ input[type="submit"] {
 	font-family: $text-font;
 	font-size: 1.125em;
 	font-weight: $header-weight;
-	color: $primary-red;
 	border: 0;
 	-webkit-border-radius: 7px;
 	-moz-border-radius: 7px;
 	border-radius: 7px;
+	a {
+		text-decoration: none;
+		color: $primary-red;
+	}
 }
-
-
 
 /* --HISTORY-- */
 
-#history-wrapper {
-	width: 1063px;
+#history-text p, #history-1 p, #history-2 p {
+	margin: 24px 18px 30px 18px;
+	font-family: $text-font;
+	font-weight: $body-weight;
+	font-size: 1.125em;
+	line-height: 1.25em;
+	color: $secondary-yellow;
+}
+#history-1 img:first-child {
+	margin-left: -24px;
+	margin-bottom: 10px;
+}
+#history-1 img:nth-child(2) {
+	margin-left: 60px;
+}
+#history-2 img:first-child {
+	margin-bottom: 10px;
+}
+
+/* --PRESS-- */
+
+#press-wrapper {
+	padding: 0 5% 30px 5%;
+}
+.reviews {
+	width: 100%;
 	margin: 0 auto;
+	background-color: $secondary-yellow;
+	border-radius: 7px;
 	box-sizing: border-box;
+	overflow: hidden;
+	padding: 1em;
+}
+#excerpt {
+	margin: -16px 0  0; 
+	font-family: $text-font;
+	font-weight: $body-weight;
+	font-size: 1.25em;
+	line-height: 1.25em;
+	color: #000;
+}
+#direct {
+	margin: 0 0 16px 0;
+	font-family: $text-font;
+	font-weight: $body-weight;
+	font-style: italic;
+	font-size: 1.25em;
+	line-height: 2em;
+	a {
+		color: $primary-red;
+	}
 }
 
-.photos {
-	float: left;
+/* --CONFIRMATION-- */
+
+.gracias-wrapper {
+	width: 528px;
+	top: 280px;
+	margin: 0 auto;
+	position: relative;
 }
-
-.text {
-	width: 348px;
-	float: right;
+#top {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: auto;
+	z-index: 2;
+	animation: appear 1s;
 }
-
-
-
-
-
-
-
-
+@keyframes appear {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+#bottom {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: auto;
+	z-index: 1;
+}
+#return-button {
+	position: absolute;
+	top: 230px;
+	left: 200px;
+	z-index: 3;
+	width: 150px;
+	margin: 6px auto 6px auto;
+	padding: 6px 6px 5px 6px;
+	background-color: #5cb4e5;
+	font-family: $text-font;
+	font-size: 1.125em;
+	text-align: center;
+	font-weight: $header-weight;
+	border: 0;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	animation: fadein 3s;
+	a {
+		text-decoration: none;
+		color: $secondary-blue;
+	}
+}
+@keyframes fadein {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
 
 /* 493 BREAKPOINT */
 @media (min-width: 493px) {
-
 	.hours-location {
 		background-position: bottom -100px left -500px;
+		padding: 18px 3% 18px 3%;
+		#phone-email {
+			margin-right: .75em;
+		}
 	}
-
 	.hours-location #address {
 		width: 442px;
 		text-align: left;
 		display: block;
 		margin: 0 auto 10px auto;
 	}
-
 	.hours-location #directions {
 		width: 442px;
 		display: block;
 		margin: 0 auto;
 	}
-
 	#taquiza-collage {
-		width: 77%;
 		margin: 0 auto 18px auto;
 		img {
-			width: 400px;
+			width: 370px;
 		}
+	}
+	#history-wrapper {
+		width: 90%;
+		margin: 0 auto;
+	}
+	#history-1, #history-2, #history-3 {
+		width: 90%;
+		margin: 0 auto;
+	}
+	#history-1 img:first-child {
+		margin-top: 2px;
+		margin-left: -10px;
+		margin-bottom: -30px;
+	}
+	#history-1 img:nth-child(2) {
+		margin-left: 170px;
+		margin-top: -40px;
+	}
+	#history-2 img:first-child {
+		margin-left: 80px;
 	}
 }
 
-
-
-
-
 /* 632 BREAKPOINT */
 @media (min-width: 632px) {
-
 	#nav-bar {
 		padding: 0 3% 18px 344px;
 		margin-top: 30px;
@@ -644,77 +823,139 @@ input[type="submit"] {
 			float: left;
 		}
 	}
-
 	#logo-lockup {
 		top: 61px;
 		img {
 			width: 319px;
 		}
 	}
-
 	#image-container {
-		/*height: 672px;*/
 		clear: both;
 	}
-
 	.hours-location .map {
 		width: 458px;
 		height: 267px;
 		float: right;
 		margin: 0 10% 14px 0;
 	}
-
 	.hours-location #address {
 		float: right;
 		display: block;
 		margin: 0 11% 10px 0;
 	}
-
 	.hours-location #directions {
 		float: right;
 		display: block;
 		margin: 0 11% 0 0;
 	}
-
 	#taquiza-header {
 		margin: 0;
 	}
-
-	#taquiza-collage {
-		width: 78%;
-		img {
-			width: 460px;
+	#armadillo {
+		width: 600px;
+		margin: 30px auto 0 auto;
+	}
+	#news-sidebar {
+		margin: 36px 0 18px 30px;
+		#fn-logo {
+			margin: -18px 0 -18px 10%;
 		}
 	}
-
-	footer {
-		height: 103px;
-		padding-top: 16px;
-		box-sizing: border-box;
+	#BBQ-lockup {
+		#BBQ-taco {
+			width: 310px;
+		}
 	}
-
-	.social-media {
-		margin: 10px 0 0 3%;
-		float: left;
-		padding: 0;
+	#taquiza-wrapper {
+		width: 520px;
 	}
-
-	#bottom-logo {
-		margin: 0 3% 0 0;
-		float: right;
+	#taquiza-info {
+		width: 520px;
 	}
-
-
+	#taquiza-form {
+		width: 520px;
+	}
+	#history-1 img:first-child {
+		margin-left: 63px;
+		margin-bottom: -120px;
+		margin-top: 30px;
+	}
+	#history-1 img:nth-child(2) {
+		margin-top: -40px;
+		margin-left: 240px;
+	}
+	#history-2 img:first-child {
+		margin-left: -40px;
+	}	
+	#history-2 img:nth-child(2) {
+		margin-left: 10px;
+	}
 }
 
-
-
-
-
+/* 760 BREAKPOINT */
+@media (min-width: 760px) {
+	.content-wrapper {
+	padding: 38px 18px 0 18px;
+	}
+	#taquiza-wrapper {
+		margin: -14px auto 30px auto;
+	}
+	#menu-buttons {
+		width: 614px;
+		button {
+			width: 150px;
+			margin: 0 auto;
+		}
+	}
+	#menus-wrapper {
+		width: 756px;
+	}
+	#menu-1, #menu-3, #menu-5, #menu-7 {
+		margin: 0 10px 0 0;
+	}
+	#menu-text, #menu-text-fd, #menu-text-ckt, #menu-text-news {
+		width: 711px;
+		padding: 1em 1em 0 1em;
+	}
+	#press-wrapper {
+		padding: 60px 5% 30px 5%;
+		width: 638.125px;
+		margin: 0 auto;
+	}
+	#news-sidebar {
+		width: 352px;
+		margin: 36px 10px 18px 18px;
+		#fn-logo {
+			margin: -18px 0 -18px 5%;
+		}
+	}
+	#BBQ-lockup {
+		width: 303px;
+		position: relative;
+		margin: 0 auto;
+	}
+	#taquiza-collage {
+		img {
+			width: 420px;
+		}
+	}
+	footer {
+		height: 54px;
+		padding: 0 18px 0 18px;
+		box-sizing: border-box;
+	}
+	.social-media {
+		float: none;
+		margin: 18px auto -38px auto;
+	}
+	#bottom-logo {
+		margin: -9px 3% 0 0;
+		float: left;
+	}
+}
 
 /* 881 BREAKPOINT */
 @media (min-width: 881px) {
-
 	#nav-bar {
 		padding: 0 18px 0px 344px;
 		ul {
@@ -758,34 +999,32 @@ input[type="submit"] {
 				}
 		}
 	}
-
+	.content-wrapper {
+	margin-top: 61px;
+	}
 	#image-container {
 		margin-top: 61px;
 	}
-
 	.taquiza-info {
 		background-position: bottom -100px right -400px;
 	}
-
-	#taquiza-collage {
-		width: 100%;
-		margin: 0 0 18px 62px;
-		img {
-			width: 606px;
-		}
+	#news-sidebar {
+		margin: 36px 18px 18px 18px;
 	}
-
-
-
+	#history-2 img:first-child {
+		margin-left: 0;
+	}
+	#history-2 img:nth-child(2) {
+		margin-left: 10px;
+	}
+	#history-3 img {
+		margin-left: 80px;
+	}
 }
-
-
 
 /* 982 BREAKPOINT */
 @media (min-width: 982px) {
-
 	#nav-bar {
-
 		ul {
 			width: 300px;
 			li {
@@ -799,91 +1038,185 @@ input[type="submit"] {
 			}
 		}
 	}
-
 	.hours-location {
 		background-position: bottom -100px left -320px;
 	}
-
-	.hours-location #phone, #hours {
+	.hours-location #phone-email, #hours {
 		float: left;
 	}
-
-	.hours-location #phone {
+	.hours-location #phone-email {
 		margin-right: .975em;
 	}
-
 	.hours-location .map {
 		float: left;
 		margin: 0 0 14px 14px;
 	}
-
 	.hours-location #address {
 		float: left;
 		margin: 0 11% 10px 384px;
 	}
-
 	.hours-location #directions {
 		float: left;
 		margin: 0 0 0 384px;
 	}
-
 	#location {
 		width: 850px;
 		margin: 0 auto;
 		overflow: hidden;
 		box-sizing: border-box;
 	}
-
 	.hours-location .map {
 		float: left;
 		margin: 0 0 14px 0;
 	}
-
-
+	#news-sidebar {
+		width: 402px;
+		padding: 0 24px 36px 24px;
+		margin: 56px 24px 18px 18px;
+		p {
+			font-size: 1.375em;
+			line-height: 1.375em;
+		}
+	}
+	#BBQ-lockup {
+		width: 353px;
+	h4 {
+		font-size: 1.25em;
+		margin: 30px 0 48px 0;
+		color: $primary-red;
+		display: inline-block;
+		vertical-align: top;
+		}
+		#BBQ-logo {
+			width: 126px;
+		}
+		#BBQ-taco {
+			margin-top: -34px;
+			width: 352px;
+		}
+	}
+	#taquiza-story {
+		width: 908px;
+		margin: 0 auto 32px auto;
+	}
 }
-
-
 
 /* 1024 BREAKPOINT */
 @media (min-width: 1024px) {
-
 	#nav-bar {
 		padding: 0 3% 0 367px;
 		#address {
 			margin: 16px 4px 0 0;
 		}
 	}
-
 	#logo-lockup {
 		left: 30px;
 	}
-
 	.taquiza-info {
 		padding: 18px 3% 18px 3%;
 	}
-
+	#taquiza-collage {
+		img {
+			width: 460px;
+		}
+	}
+	#news-sidebar {
+		margin: 56px 32px 18px 24px;
+	}
 	.hours-location {
 		padding: 18px 3% 18px 3%;
 	}
+	#history-2 img:nth-child(2) {
+		margin-bottom: 10px;
+	}
 }
 
+/* 1046 BREAKPOINT */
+@media (min-width: 1046px) {
+	#history-1 img:first-child {
+		margin-left: 120px;
+		margin-bottom: 0;
+		margin-top: 0;
+		margin-right: 10px;
+	}
+	#history-1 img:nth-child(2) {
+		margin-top: 0;
+		margin-left: 0;
+	}
+}
 
-
-
+/* 1120 BREAKPOINT */
+@media (min-width: 1120px) {
+	.content-wrapper {
+		padding: 24px 0 0 0;
+	}
+	#news-sidebar {
+		margin: 56px 32px 18px 32px;
+	}
+	#taquiza-collage {
+		width: 100%;
+		margin: 0 0 18px 62px;
+		img {
+			width: 606px;
+		}
+	}
+	#menus-wrapper {
+		width: 1063px;
+	}
+	#menu-text, #menu-text-fd, #menu-text-ckt, #menu-text-news {
+		width: 348px;
+		padding: 0 0 0 1em;
+	}
+	#taquiza-wrapper {
+		width: 1063px;
+		margin: 0 auto 30px auto;
+	}
+	#taquiza-info {
+		width: 520px;
+		margin-top: 0;
+	}
+	#taquiza-form {
+		width: 520px;
+	}
+	#history-wrapper {
+		width: 100%;
+		margin: 0 auto;
+		box-sizing: border-box;
+	}
+	#history-1, #history-2, #history-3 {
+		width: 1120px;
+		margin: 0 auto;
+	}
+	.photos {
+		float: left;
+		margin-right: 18px;
+	}
+	#history-text p, #history-1 p, #history-2 p {
+		margin-left: 18px;
+		margin-right: 60px;
+	}
+	#history-2 img:first-child {
+		margin-left: 40px;
+		margin-top: 10px;
+	}
+	#history-2 img:nth-child(2) {
+		margin-left: 10px;
+	}
+	#history-3 img {
+		margin-bottom: 30px;
+	}
+}
 
 /* 1551 BREAKPOINT */
 @media (min-width: 1551px) {
-
 	#location {
 		width: 1304px;
 		margin: 0 0 0 13%;
 	}
-
 	.hours-location #address {
 		width: 300px;
 		margin: 0 11% 10px 16px;
 	}
-
 	.hours-location #directions {
 		width: 300px;
 		margin: 0 0 0 16px;

@@ -27,9 +27,7 @@
 	<!-- <link rel="stylesheet" type="text/css" href="css/MyFontsWebfontsKit.css"> -->
     <link type="text/css" rel="stylesheet" href="css/style.css">
     <link type="text/css" rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/SantElia_Webfont.css">
     <link href='https://fonts.googleapis.com/css?family=Oswald:300,400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="css/SantElia.css">
 </head>
 <body>
 
@@ -60,12 +58,12 @@
 			<div id="taquiza-wrapper">
 				<div id="taquiza-info">
 					<h2>Taquiza Catering</h2>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+					<p>The Taquiza is the cornerstone of our catering services, and rightfully so. The Tortillas are made in-house from our very own tortilleria and are then cooked on site on a hot griddle, and the Al Pastor is carved from our own mobile "trompo", so that your guests can enjoy the show that a Taquiza party offers.<br><br>We know any special event is both fun and tedious at the same time, so let us take care of the hard work so that you could focus on the important thing, your special event!</p>
 				</div>
 				<div id="taquiza-form">
 					<form action="action_page.php">
-						<fieldset id="contact-info">
-							<legend>Contact Information</legend>
+						<fieldset id="contact-event-info">
+							<legend>Contact & Event Information</legend>
 							First name<br>
 							<input type="text" name="firstname" value="">
 							<br>
@@ -82,12 +80,10 @@
 							<input type="text" name="email" value="">
 							<br>
 							How would you like to be contacted?<br>
-							<input type="radio" name="contact" value="email" checked>E-mail
+							<input type="radio" id="c1" name="contact" value="email" checked><label for="c1">E-mail</label>
 							<br>
-							<input type="radio" name="contact" value="phone">Phone
-						</fieldset>
-						<fieldset id="event-info">
-							<legend>Event Information</legend>
+							<input type="radio" id="c2" name="contact" value="phone"><label for="c2">Phone</label>
+							<br>
 							<select class="info-options">
 								<option value="event-type">Event Type</option>
 								<option value="corporate-catering">Corporate Catering</option>
@@ -103,7 +99,7 @@
 							Location of Event<br>
 							<input type="location" /><br>
 							Number of People<br>
-							<select class="info-options">
+							<select class="info-options" id="people">
 								<option value="select">--Select--</option>
 								<option value="less-40">Less Than 40</option>
 								<option value="40-75">40-75</option>
@@ -115,36 +111,38 @@
 							<legend>Taquiza Options</legend>
 							<div id="options-meats">
 								Meats<br>
-									<p>Al Pastor</p><input type="checkbox" name="al-pastor" value="al-pastor">
-									<p>Grilled Chicken</p><input type="checkbox" name="chicken" value="chicken">
-									<p>Carne Asada</p><input type="checkbox" name="carne-asada" value="carne-asada">
-									<p>Grilled Vegetables</p><input type="checkbox" name="vegetable" value="vegetable"></p>
+									<p><label for="c3">Al Pastor</label></p><input type="checkbox" id="c3" name="al-pastor" value="al-pastor">
+									<p><label for="c4">Grilled Chicken</label></p><input type="checkbox" id="c4" name="chicken" value="chicken">
+									<p><label for="c5">Carne Asada</label></p><input type="checkbox" id="c5" name="carne-asada" value="carne-asada">
+									<p><label for="c6">Grilled Vegetables</label></p><input type="checkbox" id="c6" name="vegetable" value="vegetable"></p>
 							</div>
 							<div id="options-apps">
 								Appetizers<br>
-									<p>Chips</p><input type="checkbox" name="chips" value="chips">
-									<p>Guacamole</p><input type="checkbox" name="guacamole" value="guacamole">
-									<p>Queso</p><input type="checkbox" name="queso" value="queso">
-									<p>Pico de Gallo</p><input type="checkbox" name="pico-de-gallo" value="pico-de-gallo"></p>
+									<p><label for="c7">Chips</label></p><input type="checkbox" id="c7" name="chips" value="chips">
+									<p><label for="c8">Guacamole</label></p><input type="checkbox" id="c8" name="guacamole" value="guacamole">
+									<p><label for="c9">Queso</label></p><input type="checkbox" id="c9" name="queso" value="queso">
+									<p><label for="c10">Pico de Gallo</label></p><input type="checkbox" id="c10" name="pico-de-gallo" value="pico-de-gallo"></p>
 							</div>
 							<div id="options-toppings">
 								Toppings<br>
-									<p>Jack Cheese</p><input type="checkbox" name="jack-cheese" value="jack-cheese">
-									<p>Lettuce</p><input type="checkbox" name="lettuce" value="lettuce">
-									<p>Black Refried Beans</p><input type="checkbox" name="black-refried-beans" value="black-refried-beans">
-									<p>Rice</p><input type="checkbox" name="rice" value="rice"></p>
+									<p><label for="c11">Jack Cheese</label></p><input type="checkbox" id="c11" name="jack-cheese" value="jack-cheese">
+									<p><label for="c12">Lettuce</label></p><input type="checkbox" id="c12" name="lettuce" value="lettuce">
+									<p><label for="c13">Black Refried Beans</label></p><input type="checkbox" id="c13" name="black-refried-beans" value="black-refried-beans">
+									<p><label for="c14">Rice</label></p><input type="checkbox" id="c14" name="rice" value="rice"></p>
 							</div>
 							<div id="options-tortilla">
 								Tortillas<br>
-									<p>Corn</p><input type="checkbox" name="corn" value="corn">
-									<p>Flour</p><input type="checkbox" name="flour" value="flour">
-									<p>Jicama</p><input type="checkbox" name="jicama" value="jicama"></p>
+									<p><label for="c15">Corn</label></p><input type="checkbox" id="c15" name="corn" value="corn">
+									<p><label for="c16">Flour</label></p><input type="checkbox" id="c16" name="flour" value="flour">
+									<p><label for="c17">Jicama</label></p><input type="checkbox" id="c17" name="jicama" value="jicama"></p>
 							</div>
 						</fieldset>
 						<h5>Additional Information</h5><br>
 						<textarea name="addl-info" value=""></textarea>
 						<br>
-						<input type="submit" value="SUBMIT">
+						<!-- REPLACE INPUT W/FAKE BUTTON -->
+						<!--<input type="submit" value="SUBMIT">-->
+						<button id="submit"><a href="confirmation.html">SUBMIT</a></button>
 					</form>
 				</div>
 			</div>
@@ -157,14 +155,14 @@
 
 		<!-- FOOTER -->
 		<footer>
+			<div id="bottom-logo"><a href="index.html"><img id="Dillo" src="images/Armadillo-logo_sm_blue.png" alt="Taco Flats" /></a><p>&copy; 2016 Taco Flats</p></div>
 			<div class="social-media">
-				<a href="https://www.facebook.com/tacoflats"><img src="images/Facebook_46.png" alt="facebook" /></a>
-				<a href="https://twitter.com/TacoFlats"><img src="images/Twitter_46.png" alt="twitter" /></a>
-				<a href="https://instagram.com/tacoflats"><img src="images/Instagram_46.png" alt="instagram" /></a>
+				<a href="https://www.facebook.com/tacoflats"><img id="FB" src="images/Facebook_34_blue.png" alt="facebook" /></a>
+				<a href="https://twitter.com/TacoFlats"><img id="TWT" src="images/Twitter_34_blue.png" alt="twitter" /></a>
+				<a href="https://instagram.com/tacoflats"><img id="INST" src="images/Instagram_34_blue.png" alt="instagram" /></a>
 			</div>
-			<div id="bottom-logo"><a href="index.html"><img src="images/Armadillo-logo_sm_1c.png" alt="Taco Flats" /></a></div>
+			<img id="design" src="images/Design_link_blue.png" alt="design by Jay Hollinsworth" />
 		</footer>
-
 
 
 
